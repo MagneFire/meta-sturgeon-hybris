@@ -1,0 +1,36 @@
+From 79fc5f25c3d39567465fbda4e3fee3c3967af5e8 Mon Sep 17 00:00:00 2001
+From: MagneFire <idanlcontact@gmail.com>
+Date: Wed, 25 Mar 2020 21:12:56 +0100
+Subject: [PATCH] Revert "bluetooth: nitrous: fix the bug of dead lock."
+
+This reverts commit d46755f6636dc08b8633291951743d04e017423e.
+---
+ drivers/bluetooth/nitrous.c | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/drivers/bluetooth/nitrous.c b/drivers/bluetooth/nitrous.c
+index a48aa7ccb49..d994958c75a 100644
+--- a/drivers/bluetooth/nitrous.c
++++ b/drivers/bluetooth/nitrous.c
+@@ -171,8 +171,6 @@ static enum hrtimer_restart nitrous_tx_lpm_handler(struct hrtimer *timer)
+  */
+ void nitrous_prepare_uart_tx_locked(struct uart_port *port)
+ {
+-	unsigned long flags;
+-
+ 	if (!bt_lpm) {
+ 		pr_err("%s: missing bt_lpm\n", __func__);
+ 		return;
+@@ -183,9 +181,7 @@ void nitrous_prepare_uart_tx_locked(struct uart_port *port)
+ 		return;
+ 	}
+ 
+-	spin_unlock_irqrestore(&port->lock, flags);
+ 	hrtimer_cancel(&bt_lpm->tx_lpm_timer);
+-	spin_lock_irqsave(&port->lock, flags);
+ 	nitrous_wake_device_locked(bt_lpm, true);
+ 	hrtimer_start(&bt_lpm->tx_lpm_timer, ktime_set(UART_TIMEOUT_SEC, 0),
+ 		HRTIMER_MODE_REL);
+-- 
+2.25.2
+
