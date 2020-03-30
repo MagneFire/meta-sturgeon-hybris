@@ -1,0 +1,982 @@
+sh-4.4# /system/bin/logcat 
+--------- beginning of main
+__bionic_open_tzdata_path: ANDROID_DATA not set!
+__bionic_open_tzdata_path: ANDROID_ROOT not set!
+__bionic_open_tzdata_path: ANDROID_DATA not set!
+__bionic_open_tzdata_path: ANDROID_ROOT not set!
+__bionic_open_tzdata_path: ANDROID_DATA not set!
+__bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:24:11.222   355   355 W auditd  : type=2000 audit(0.0:1): initialized
+03-29 19:24:24.707     0   357 I strace  : mprotect(0xb6f85000, 4096, PROT_READ)   = 0
+03-29 19:24:24.707     0   357 I strace  : set_tid_address(0xb6f87b3c)             = 365
+03-29 19:24:24.708     0   357 I strace  : set_tls(0xb6f87b7c)                     = 0
+03-29 19:24:24.708     0   357 I strace  : mmap2(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f64000
+03-29 19:24:24.708     0   357 I strace  : madvise(0xb6f64000, 12288, MADV_MERGEABLE) = -1 EINVAL (Invalid argument)
+03-29 19:24:24.708     0   357 I strace  : mprotect(0xb6f64000, 4096, PROT_NONE)   = 0
+03-29 19:24:24.709     0   357 I strace  : sigaltstack({ss_sp=0xb6f65000, ss_flags=0, ss_size=8192}, NULL) = 0
+03-29 19:24:24.709     0   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f65000, 0x2000, 0xb6f83672) = 0
+03-29 19:24:24.713     0   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f63000
+03-29 19:24:24.713     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ)   = 0
+03-29 19:24:24.713     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:24.714     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ)   = 0
+03-29 19:24:24.714     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:24.714     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ)   = 0
+03-29 19:24:24.714     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:24.714     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ)   = 0
+03-29 19:24:24.715     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:24.715     0   357 I strace  : mprotect(0xb6f63000, 4096, PROT_READ)   = 0
+03-29 19:24:24.716   357   357 I strace  : personality(0xffffffff)                 = 0x800000 (PER_LINUX|ADDR_LIMIT_32BIT)
+03-29 19:24:24.719   357   357 I strace  : personality(PER_LINUX32|ADDR_LIMIT_32BIT) = 0x800000 (PER_LINUX|ADDR_LIMIT_32BIT)
+03-29 19:24:24.720   357   357 I strace  : openat(AT_FDCWD, "/dev/__properties__", O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC) = 3
+03-29 19:24:24.720   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0444, st_size=131072, ...}) = 0
+03-29 19:24:24.721   357   357 I strace  : mmap2(NULL, 131072, PROT_READ, MAP_SHARED, 3, 0) = 0xb6f43000
+03-29 19:24:24.721   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.721   357   357 I strace  : sigaction(SIGABRT, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.721   357   357 I strace  : sigaction(SIGBUS, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.722   357   357 I strace  : sigaction(SIGFPE, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.722   357   357 I strace  : sigaction(SIGILL, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.722   357   357 I strace  : sigaction(SIGPIPE, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.723   357   357 I strace  : sigaction(SIGSEGV, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.723   357   357 I strace  : sigaction(SIGSTKFLT, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.724   357   357 I strace  : sigaction(SIGTRAP, {sa_handler=0xb6f69661, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0xb6f78e18}, NULL) = 0
+03-29 19:24:24.727   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f42000
+03-29 19:24:24.728   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f42000, 0x1000, 0xb6f81815) = 0
+03-29 19:24:24.728   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f41000
+03-29 19:24:24.728   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f41000, 0x1000, 0xb6f817b0) = 0
+03-29 19:24:24.728   357   357 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f40000
+03-29 19:24:24.729   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f40000, 0xc, 0xb6f8178c) = 0
+03-29 19:24:24.729   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3f000
+03-29 19:24:24.730   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3f000, 0x1000, 0xb6f81815) = 0
+03-29 19:24:24.730   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3e000
+03-29 19:24:24.730   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3e000, 0x1000, 0xb6f81815) = 0
+03-29 19:24:24.731   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libc.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.734   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libc.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.734   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=675844, ...}) = 0
+03-29 19:24:24.734   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3c000
+03-29 19:24:24.736   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3c000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.737   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3a000
+03-29 19:24:24.737   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3a000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.738   357   357 I strace  : futex(0xb6f88f74, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:24.738   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.738   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.739   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libc.so", 4096) = 19
+03-29 19:24:24.739   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.739   357   357 I strace  : munmap(0xb6f3a000, 8192)                = 0
+03-29 19:24:24.739   357   357 I strace  : munmap(0xb6f3c000, 8192)                = 0
+03-29 19:24:24.739   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.740   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.740   357   357 I strace  : mmap2(NULL, 540672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6eb9000
+03-29 19:24:24.740   357   357 I strace  : mmap2(0xb6eb9000, 467824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6eb9000
+03-29 19:24:24.740   357   357 I strace  : mmap2(0xb6f2c000, 26056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x72000) = 0xb6f2c000
+03-29 19:24:24.742   357   357 I strace  : mmap2(0xb6f33000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f33000
+03-29 19:24:24.742   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.742   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.742   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libcutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.743   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libcutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.743   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=63196, ...}) = 0
+03-29 19:24:24.745   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.747   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817a0) = 0
+03-29 19:24:24.749   357   357 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eb8000
+03-29 19:24:24.750   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6eb8000, 0xc, 0xb6f8178c) = 0
+03-29 19:24:24.750   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eb6000
+03-29 19:24:24.750   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6eb6000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.751   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eb4000
+03-29 19:24:24.751   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6eb4000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.751   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.751   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.752   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libcutils.so", 4096) = 24
+03-29 19:24:24.752   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.752   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.763   357   357 I strace  : munmap(0xb6eb4000, 8192)                = 0
+03-29 19:24:24.763   357   357 I strace  : munmap(0xb6eb6000, 8192)                = 0
+03-29 19:24:24.763   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.764   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.764   357   357 I strace  : mmap2(NULL, 69632, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6ea7000
+03-29 19:24:24.764   357   357 I strace  : mmap2(0xb6ea7000, 57300, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6ea7000
+03-29 19:24:24.765   357   357 I strace  : mmap2(0xb6eb6000, 4220, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xe000) = 0xb6eb6000
+03-29 19:24:24.765   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.778   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.779   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/liblog.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.783   357   357 I strace  : openat(AT_FDCWD, "/system/lib/liblog.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.791   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=34408, ...}) = 0
+03-29 19:24:24.791   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ea5000
+03-29 19:24:24.791   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6ea5000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.792   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ea3000
+03-29 19:24:24.792   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6ea3000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.793   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.793   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.794   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/liblog.so", 4096) = 21
+03-29 19:24:24.796   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.797   357   357 I strace  : munmap(0xb6ea3000, 8192)                = 0
+03-29 19:24:24.797   357   357 I strace  : munmap(0xb6ea5000, 8192)                = 0
+03-29 19:24:24.797   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.797   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.798   357   357 I strace  : mmap2(NULL, 40960, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6e9d000
+03-29 19:24:24.798   357   357 I strace  : mmap2(0xb6e9d000, 30216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6e9d000
+03-29 19:24:24.798   357   357 I strace  : mmap2(0xb6ea5000, 4168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x7000) = 0xb6ea5000
+03-29 19:24:24.798   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.799   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.799   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libm.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.799   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libm.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.799   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=132824, ...}) = 0
+03-29 19:24:24.800   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e9b000
+03-29 19:24:24.800   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e9b000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.800   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e99000
+03-29 19:24:24.800   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e99000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.801   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.801   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.801   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libm.so", 4096) = 19
+03-29 19:24:24.801   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.801   357   357 I strace  : munmap(0xb6e99000, 8192)                = 0
+03-29 19:24:24.802   357   357 I strace  : munmap(0xb6e9b000, 8192)                = 0
+03-29 19:24:24.802   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.802   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.805   357   357 I strace  : mmap2(NULL, 139264, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6e7b000
+03-29 19:24:24.805   357   357 I strace  : mmap2(0xb6e7b000, 126892, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6e7b000
+03-29 19:24:24.805   357   357 I strace  : mmap2(0xb6e9b000, 4256, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x1f000) = 0xb6e9b000
+03-29 19:24:24.806   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.806   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.806   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libstdc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.806   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libstdc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.807   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=21972, ...}) = 0
+03-29 19:24:24.807   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.807   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817a0) = 0
+03-29 19:24:24.808   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e79000
+03-29 19:24:24.808   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e79000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.808   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e77000
+03-29 19:24:24.808   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e77000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.809   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.809   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.809   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libstdc++.so", 4096) = 24
+03-29 19:24:24.809   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.809   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.810   357   357 I strace  : munmap(0xb6e77000, 8192)                = 0
+03-29 19:24:24.810   357   357 I strace  : munmap(0xb6e79000, 8192)                = 0
+03-29 19:24:24.819   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.819   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.819   357   357 I strace  : mmap2(NULL, 28672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6e74000
+03-29 19:24:24.820   357   357 I strace  : mmap2(0xb6e74000, 16653, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6e74000
+03-29 19:24:24.820   357   357 I strace  : mmap2(0xb6e79000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x4000) = 0xb6e79000
+03-29 19:24:24.822   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.822   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.822   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.822   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.822   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=104052, ...}) = 0
+03-29 19:24:24.823   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.823   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817a0) = 0
+03-29 19:24:24.823   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e72000
+03-29 19:24:24.823   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e72000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.824   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e70000
+03-29 19:24:24.824   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e70000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.824   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.824   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.825   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libutils.so", 4096) = 23
+03-29 19:24:24.825   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.825   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.825   357   357 I strace  : munmap(0xb6e70000, 8192)                = 0
+03-29 19:24:24.826   357   357 I strace  : munmap(0xb6e72000, 8192)                = 0
+03-29 19:24:24.826   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.826   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.826   357   357 I strace  : mmap2(NULL, 110592, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6e59000
+03-29 19:24:24.826   357   357 I strace  : mmap2(0xb6e59000, 95464, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6e59000
+03-29 19:24:24.827   357   357 I strace  : mmap2(0xb6e72000, 4116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x18000) = 0xb6e72000
+03-29 19:24:24.827   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.827   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.827   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.827   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.828   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=575088, ...}) = 0
+03-29 19:24:24.828   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e57000
+03-29 19:24:24.828   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e57000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.829   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e55000
+03-29 19:24:24.829   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6e55000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.862   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.862   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.862   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libc++.so", 4096) = 21
+03-29 19:24:24.862   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.863   357   357 I strace  : munmap(0xb6e55000, 8192)                = 0
+03-29 19:24:24.863   357   357 I strace  : munmap(0xb6e57000, 8192)                = 0
+03-29 19:24:24.863   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.863   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.864   357   357 I strace  : mmap2(NULL, 585728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6dca000
+03-29 19:24:24.864   357   357 I strace  : mmap2(0xb6dca000, 556131, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6dca000
+03-29 19:24:24.864   357   357 I strace  : mmap2(0xb6e53000, 16401, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x88000) = 0xb6e53000
+03-29 19:24:24.864   357   357 I strace  : mmap2(0xb6e58000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6e58000
+03-29 19:24:24.865   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.865   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.865   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libbacktrace.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.865   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libbacktrace.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.866   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=38448, ...}) = 0
+03-29 19:24:24.866   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.866   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817a0) = 0
+03-29 19:24:24.867   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6dc8000
+03-29 19:24:24.867   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6dc8000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.867   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6dc6000
+03-29 19:24:24.867   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6dc6000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.867   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.868   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.868   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libbacktrace.so", 4096) = 27
+03-29 19:24:24.868   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.868   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.868   357   357 I strace  : munmap(0xb6dc6000, 8192)                = 0
+03-29 19:24:24.869   357   357 I strace  : munmap(0xb6dc8000, 8192)                = 0
+03-29 19:24:24.869   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.869   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.869   357   357 I strace  : mmap2(NULL, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6dbf000
+03-29 19:24:24.869   357   357 I strace  : mmap2(0xb6dbf000, 33696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6dbf000
+03-29 19:24:24.870   357   357 I strace  : mmap2(0xb6dc8000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x8000) = 0xb6dc8000
+03-29 19:24:24.870   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.870   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.871   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libbase.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.871   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libbase.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.871   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=38504, ...}) = 0
+03-29 19:24:24.871   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6dbd000
+03-29 19:24:24.871   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6dbd000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.872   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6dbb000
+03-29 19:24:24.872   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6dbb000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.872   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.872   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.873   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libbase.so", 4096) = 22
+03-29 19:24:24.897   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.897   357   357 I strace  : munmap(0xb6dbb000, 8192)                = 0
+03-29 19:24:24.898   357   357 I strace  : munmap(0xb6dbd000, 8192)                = 0
+03-29 19:24:24.898   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.898   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.898   357   357 I strace  : mmap2(NULL, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6db4000
+03-29 19:24:24.899   357   357 I strace  : mmap2(0xb6db4000, 32900, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6db4000
+03-29 19:24:24.899   357   357 I strace  : mmap2(0xb6dbd000, 4104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x8000) = 0xb6dbd000
+03-29 19:24:24.899   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6db3000
+03-29 19:24:24.899   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6db3000, 0x1000, 0xb6f81815) = 0
+03-29 19:24:24.900   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.905   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.905   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libunwind.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:24.905   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libunwind.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:24.906   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=67116, ...}) = 0
+03-29 19:24:24.906   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.907   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817a0) = 0
+03-29 19:24:24.907   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6db1000
+03-29 19:24:24.907   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6db1000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.907   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6daf000
+03-29 19:24:24.907   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6daf000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:24.908   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:24.908   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.908   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libunwind.so", 4096) = 24
+03-29 19:24:24.908   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.909   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:24.909   357   357 I strace  : munmap(0xb6daf000, 8192)                = 0
+03-29 19:24:24.909   357   357 I strace  : munmap(0xb6db1000, 8192)                = 0
+03-29 19:24:24.909   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:24.909   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:24.910   357   357 I strace  : mmap2(NULL, 360448, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6d5b000
+03-29 19:24:24.910   357   357 I strace  : mmap2(0xb6d5b000, 62280, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6d5b000
+03-29 19:24:24.910   357   357 I strace  : mmap2(0xb6d6b000, 4148, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xf000) = 0xb6d6b000
+03-29 19:24:24.910   357   357 I strace  : mmap2(0xb6d6d000, 286720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6d6d000
+03-29 19:24:24.910   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.938   357   357 I strace  : close(3)                                = 0
+03-29 19:24:24.938   357   357 I strace  : mprotect(0xb6f94000, 4096, PROT_READ)   = 0
+03-29 19:24:24.939   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.939   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.939   357   357 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d5a000
+03-29 19:24:24.939   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d5a000, 0xc, 0xb6f8178c) = 0
+03-29 19:24:24.941   357   357 I strace  : mprotect(0xb6f2c000, 16384, PROT_READ)  = 0
+03-29 19:24:24.942   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.942   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.942   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.942   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:24.943   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:24.943   357   357 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d58000
+03-29 19:24:24.943   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d58000, 0xc, 0xb6f8178c) = 0
+03-29 19:24:24.943   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.944   357   357 I strace  : mprotect(0xb6eb6000, 4096, PROT_READ)   = 0
+03-29 19:24:24.944   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:24.944   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.944   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.945   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:24.945   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:24.945   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.945   357   357 I strace  : mprotect(0xb6ea5000, 4096, PROT_READ)   = 0
+03-29 19:24:24.946   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:24.946   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.946   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.946   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:24.946   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:24.947   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.947   357   357 I strace  : mprotect(0xb6e9b000, 4096, PROT_READ)   = 0
+03-29 19:24:24.947   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:24.948   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.948   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.948   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:24.973   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.974   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:24.974   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:24.974   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:24.976   357   357 I strace  : mprotect(0xb6e72000, 4096, PROT_READ)   = 0
+03-29 19:24:24.976   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:24.976   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:24.976   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:24.977   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:24.977   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:24.977   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:25.047   357   357 I strace  : mprotect(0xb6e53000, 16384, PROT_READ)  = 0
+03-29 19:24:25.048   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:25.048   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:25.049   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:25.049   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:25.049   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:25.050   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:25.059   357   357 I strace  : mprotect(0xb6dc8000, 4096, PROT_READ)   = 0
+03-29 19:24:25.059   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:25.061   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:25.061   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:25.061   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:25.061   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:25.062   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:25.068   357   357 I strace  : mprotect(0xb6dbd000, 4096, PROT_READ)   = 0
+03-29 19:24:25.068   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:25.068   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:25.068   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:25.069   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:25.069   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:25.069   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:25.072   357   357 I strace  : mprotect(0xb6d6b000, 4096, PROT_READ)   = 0
+03-29 19:24:25.072   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:25.072   357   357 I strace  : mprotect(0xb6db3000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.072   357   357 I strace  : mprotect(0xb6f42000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.073   357   357 I strace  : mprotect(0xb6f3e000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.073   357   357 I strace  : openat(AT_FDCWD, "/dev/__properties__", O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC) = 3
+03-29 19:24:25.073   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0444, st_size=131072, ...}) = 0
+03-29 19:24:25.073   357   357 I strace  : mmap2(NULL, 131072, PROT_READ, MAP_SHARED, 3, 0) = 0xb6d38000
+03-29 19:24:25.073   357   357 I strace  : close(3)                                = 0
+03-29 19:24:25.074   357   357 I strace  : futex(0xb6f32648, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.077   357   357 I strace  : openat(AT_FDCWD, "/vendor/lib/libnetd_client.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 19:24:25.077   357   357 I strace  : openat(AT_FDCWD, "/system/lib/libnetd_client.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:25.077   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0755, st_size=17916, ...}) = 0
+03-29 19:24:25.077   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d36000
+03-29 19:24:25.078   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d36000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:25.078   357   357 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d34000
+03-29 19:24:25.079   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d34000, 0x2000, 0xb6f81701) = 0
+03-29 19:24:25.079   357   357 I strace  : prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+03-29 19:24:25.079   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:25.084   357   357 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libnetd_client.so", 4096) = 29
+03-29 19:24:25.084   357   357 I strace  : prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+03-29 19:24:25.084   357   357 I strace  : munmap(0xb6d34000, 8192)                = 0
+03-29 19:24:25.084   357   357 I strace  : munmap(0xb6d36000, 8192)                = 0
+03-29 19:24:25.084   357   357 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 19:24:25.085   357   357 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f3d000
+03-29 19:24:25.085   357   357 I strace  : mmap2(NULL, 24576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6d32000
+03-29 19:24:25.085   357   357 I strace  : mmap2(0xb6d32000, 12880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6d32000
+03-29 19:24:25.085   357   357 I strace  : mmap2(0xb6d36000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x3000) = 0xb6d36000
+03-29 19:24:25.085   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:25.085   357   357 I strace  : close(3)                                = 0
+03-29 19:24:25.086   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f3d000
+03-29 19:24:25.086   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6f3d000, 0x1000, 0xb6f817c0) = 0
+03-29 19:24:25.086   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d59000
+03-29 19:24:25.086   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6d59000, 0x1000, 0xb6f817d0) = 0
+03-29 19:24:25.086   357   357 I strace  : munmap(0xb6f3d000, 4096)                = 0
+03-29 19:24:25.088   357   357 I strace  : mprotect(0xb6d36000, 4096, PROT_READ)   = 0
+03-29 19:24:25.088   357   357 I strace  : munmap(0xb6d59000, 4096)                = 0
+03-29 19:24:25.089   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.089   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.089   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.090   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.090   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.090   357   357 I strace  : brk(NULL)                               = 0xb6f97000
+03-29 19:24:25.090   357   357 I strace  : mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6cf2000
+03-29 19:24:25.090   357   357 I strace  : madvise(0xb6cf2000, 262144, MADV_MERGEABLE) = -1 EINVAL (Invalid argument)
+03-29 19:24:25.091   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6cf2000, 0x40000, 0xb6f24061) = 0
+03-29 19:24:25.091   357   357 I strace  : munmap(0xb6cf2000, 262144)              = 0
+03-29 19:24:25.091   357   357 I strace  : mmap2(NULL, 520192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6cb3000
+03-29 19:24:25.091   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6cb3000, 0x7f000, 0xb6f24061) = 0
+03-29 19:24:25.091   357   357 I strace  : munmap(0xb6cb3000, 53248)               = 0
+03-29 19:24:25.092   357   357 I strace  : munmap(0xb6d00000, 204800)              = 0
+03-29 19:24:25.092   357   357 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f3d000
+03-29 19:24:25.093   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.104   357   357 I strace  : openat(AT_FDCWD, "/proc/stat", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 19:24:25.104   357   357 I strace  : fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+03-29 19:24:25.104   357   357 I strace  : mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6c80000
+03-29 19:24:25.104   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6c80000, 0x40000, 0xb6f24061) = 0
+03-29 19:24:25.108   357   357 I strace  : read(3, "cpu  1040 0 1087 2807 76 0 13 0 "..., 1024) = 1024
+03-29 19:24:25.113   357   357 I strace  : read(3, "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "..., 1024) = 551
+03-29 19:24:25.113   357   357 I strace  : read(3, "", 1024)                       = 0
+03-29 19:24:25.113   357   357 I strace  : close(3)                                = 0
+03-29 19:24:25.113   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.114   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.114   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.114   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.114   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.114   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.115   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.115   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.115   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.115   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.116   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.116   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.116   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.116   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.116   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.117   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.117   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.117   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.117   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.117   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.118   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.118   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.118   357   357 I strace  : futex(0xb6e58a5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.118   357   357 I strace  : futex(0xb6f33f14, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.118   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.119   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.119   357   357 I strace  : futex(0xb6f33e74, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 19:24:25.119   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.135   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.135   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.135   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.135   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.136   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.136   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.136   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.136   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.137   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.137   357   357 I strace  : mprotect(0xb6db3000, 4096, PROT_READ)   = 0
+03-29 19:24:25.137   357   357 I strace  : mprotect(0xb6f42000, 4096, PROT_READ)   = 0
+03-29 19:24:25.137   357   357 I strace  : mprotect(0xb6f3e000, 4096, PROT_READ)   = 0
+03-29 19:24:25.137   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 19:24:25.138   357   357 I strace  : mprotect(0xb6f3d000, 4096, PROT_READ)   = 0
+03-29 19:24:25.138   357   357 I strace  : ugetrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM_INFINITY}) = 0
+03-29 19:24:25.138   357   357 I strace  : setrlimit(RLIMIT_CORE, {rlim_cur=RLIM_INFINITY, rlim_max=RLIM_INFINITY}) = 0
+03-29 19:24:25.138   357   357 I strace  : openat(AT_FDCWD, "/nvdata/accclibration", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+03-29 19:24:25.138   357   357 I strace  : openat(AT_FDCWD, "/nvdata/BARO", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+03-29 19:24:25.139   357   357 I strace  : openat(AT_FDCWD, "/dev/pmsg0", O_WRONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+03-29 19:24:25.139   357   357 I strace  : socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3
+03-29 19:24:25.144   357   357 I strace  : fcntl64(3, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+03-29 19:24:25.144   357   357 I strace  : connect(3, {sa_family=AF_UNIX, sun_path="/dev/socket/logdw"}, 110) = 0
+03-29 19:24:25.144   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:25.144   365   365 D shd     : Failed to get shdctl from environment: No such file or directory
+03-29 19:24:25.144   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509865, tv_nsec=144624634}) = 0
+03-29 19:24:25.144   357   357 I strace  : writev(3, [{iov_base="\0m\1\351\365\200^\372\313\236\10", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Failed to get shdctl from enviro"..., iov_len=66}], 4) = 82
+03-29 19:24:25.145   357   357 I strace  : socket(AF_UNIX, SOCK_STREAM, 0)         = 4
+03-29 19:24:25.145   357   357 I strace  : unlinkat(AT_FDCWD, "/dev/socket/shdctl", 0) = -1 ENOENT (No such file or directory)
+03-29 19:24:25.145   357   357 I strace  : setsockopt(4, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+03-29 19:24:25.145   357   357 I strace  : bind(4, {sa_family=AF_UNIX, sun_path="/dev/socket/shdctl"}, 21) = 0
+03-29 19:24:25.146   357   357 I strace  : listen(4, 4)                            = 0
+03-29 19:24:25.146   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:25.146   365   365 D shd     : Failed to get shddata from environment: No such file or directory
+03-29 19:24:25.146   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509865, tv_nsec=146436874}) = 0
+03-29 19:24:25.146   357   357 I strace  : writev(3, [{iov_base="\0m\1\351\365\200^\ns\272\10", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Failed to get shddata from envir"..., iov_len=67}], 4) = 83
+03-29 19:24:25.147   357   357 I strace  : socket(AF_UNIX, SOCK_STREAM, 0)         = 5
+03-29 19:24:25.147   357   357 I strace  : unlinkat(AT_FDCWD, "/dev/socket/shddata", 0) = -1 ENOENT (No such file or directory)
+03-29 19:24:25.147   357   357 I strace  : setsockopt(5, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+03-29 19:24:25.147   357   357 I strace  : bind(5, {sa_family=AF_UNIX, sun_path="/dev/socket/shddata"}, 22) = 0
+03-29 19:24:25.147   357   357 I strace  : listen(5, 4)                            = 0
+03-29 19:24:25.174   357   357 I strace  : openat(AT_FDCWD, "/dev/ttyHSL1", O_RDWR|O_NOCTTY|O_LARGEFILE) = 6
+03-29 19:24:25.174   357   357 I strace  : ioctl(6, TCFLSH, TCIOFLUSH)             = 0
+03-29 19:24:25.174   357   357 I strace  : ioctl(6, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+03-29 19:24:25.175   357   357 I strace  : ioctl(6, SNDCTL_TMR_START or TCSETS, {B9600 -opost -isig -icanon -echo ...}) = 0
+03-29 19:24:25.175   357   357 I strace  : ioctl(6, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 19:24:25.175   357   357 I strace  : ioctl(6, TCFLSH, TCIOFLUSH)             = 0
+03-29 19:24:25.175   357   357 I strace  : write(6, "\1\0\17\0\255c~", 7)          = 7
+03-29 19:24:25.184   357   357 I strace  : pselect6(7, [6], NULL, NULL, {tv_sec=0, tv_nsec=200000000}, NULL) = 1 (in [6], left {tv_sec=0, tv_nsec=191502135})
+03-29 19:24:25.184   357   357 I strace  : read(6, "\1\1\17\00011.900.12.01.00\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1500) = 56
+03-29 19:24:25.184   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:25.185   365   365 D update_mcu: get mcu current version:11.900.12.01.00, length:15.
+03-29 19:24:25.185   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509865, tv_nsec=185055572}) = 0
+03-29 19:24:25.185   357   357 I strace  : writev(3, [{iov_base="\0m\1\351\365\200^T\271\7\v", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="update_mcu\0", iov_len=11}, {iov_base="get mcu current version:11.900.1"..., iov_len=53}], 4) = 76
+03-29 19:24:25.187   357   357 I strace  : close(6)                                = 0
+03-29 19:24:25.187   357   357 I strace  : openat(AT_FDCWD, "/system/bin/mcu.bin", O_RDONLY|O_LARGEFILE) = 6
+03-29 19:24:25.188   357   357 I strace  : fstat64(6, {st_mode=S_IFREG|0755, st_size=197463, ...}) = 0
+03-29 19:24:25.190   357   357 I strace  : read(6, "\377\252\252\377\340\0\0\0w\2\3\0\3468\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 4096
+03-29 19:24:25.190   357   357 I strace  : close(6)                                = 0
+03-29 19:24:25.190   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:25.191   365   365 E update_mcu: mcu version same(11.900.12.01.00), do not need update!
+03-29 19:24:25.191   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509865, tv_nsec=191010311}) = 0
+03-29 19:24:25.191   357   357 I strace  : writev(3, [{iov_base="\0m\1\351\365\200^\7\226b\v", iov_len=11}, {iov_base="\6", iov_len=1}, {iov_base="update_mcu\0", iov_len=11}, {iov_base="mcu version same(11.900.12.01.00"..., iov_len=56}], 4) = 79
+03-29 19:24:25.191   357   357 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_boot1", O_WRONLY|O_LARGEFILE) = 6
+03-29 19:24:25.195   357   357 I strace  : write(6, "0", 1)                        = 1
+03-29 19:24:25.195   357   357 I strace  : close(6)                                = 0
+03-29 19:24:25.195   357   357 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_boot0", O_WRONLY|O_LARGEFILE) = 6
+03-29 19:24:25.199   357   357 I strace  : write(6, "0", 1)                        = 1
+03-29 19:24:25.207   357   357 I strace  : close(6)                                = 0
+03-29 19:24:25.208   357   357 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_reset", O_WRONLY|O_LARGEFILE) = 6
+03-29 19:24:25.211   357   357 I strace  : write(6, "0", 1)                        = 1
+03-29 19:24:25.220   357   357 I strace  : close(6)                                = 0
+03-29 19:24:25.232   357   357 I strace  : nanosleep({tv_sec=0, tv_nsec=12000000}, NULL) = 0
+03-29 19:24:25.233   357   357 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_reset", O_WRONLY|O_LARGEFILE) = 6
+03-29 19:24:25.236   357   357 I strace  : write(6, "1", 1)                        = 1
+03-29 19:24:25.243   357   357 I strace  : close(6)                                = 0
+03-29 19:24:26.158   377   377 D SensorHal: Loaded library from /system/lib/libsensorhub.so
+03-29 19:24:26.158   377   377 D SensorHal: sensors_poll_context_t get in !
+03-29 19:24:26.158   377   377 D SensorHal: sensorsocket_init_timeout ok.
+03-29 19:24:27.243   357   357 I strace  : nanosleep({tv_sec=2, tv_nsec=0}, 0xbed8ccb0) = 0
+03-29 19:24:27.245   357   357 I strace  : openat(AT_FDCWD, "/dev/ttyHSL1", O_RDWR|O_NOCTTY|O_LARGEFILE) = 6
+03-29 19:24:27.246   357   357 I strace  : ioctl(6, TCFLSH, TCIOFLUSH)             = 0
+03-29 19:24:27.246   357   357 I strace  : ioctl(6, TCGETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 19:24:27.246   357   357 I strace  : ioctl(6, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 19:24:27.246   357   357 I strace  : ioctl(6, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 19:24:27.246   357   357 I strace  : ioctl(6, TCFLSH, TCIOFLUSH)             = 0
+03-29 19:24:27.247   357   357 I strace  : mmap2(NULL, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xb6b81000
+03-29 19:24:27.247   357   357 I strace  : mprotect(0xb6b81000, 4096, PROT_NONE)   = 0
+03-29 19:24:27.247   357   357 I strace  : clone(child_stack=0xb6c7f928, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0xb6c7f938, tls=0xb6c7f978, child_tidptr=0xb6c7f938) = 382
+03-29 19:24:27.247   357   357 I strace  : mmap2(NULL, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xb6a82000
+03-29 19:24:27.248   357   357 I strace  : mprotect(0xb6a82000, 4096, PROT_NONE)   = 0
+03-29 19:24:27.248   357   357 I strace  : clone(child_stack=0xb6b80928, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0xb6b80938, tls=0xb6b80978, child_tidptr=0xb6b80938) = 383
+03-29 19:24:27.248   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:27.248   365   365 D shd     : Start sensorhub daemon, control server create ok
+03-29 19:24:27.248   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=248553019}) = 0
+03-29 19:24:27.248   357   357 I strace  : writev(3, [{iov_base="\0m\1\353\365\200^;\236\320\16", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Start sensorhub daemon, control "..., iov_len=49}], 4) = 65
+03-29 19:24:27.249   357   357 I strace  : mmap2(NULL, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xb6983000
+03-29 19:24:27.249   357   357 I strace  : mprotect(0xb6983000, 4096, PROT_NONE)   = 0
+03-29 19:24:27.249   357   357 I strace  : clone(child_stack=0xb6a81928, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0xb6a81938, tls=0xb6a81978, child_tidptr=0xb6a81938) = 384
+03-29 19:24:27.249   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:27.249   365   365 D shd     : Send Handshake to sensorhub
+03-29 19:24:27.249   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=249669842}) = 0
+03-29 19:24:27.250   357   357 I strace  : writev(3, [{iov_base="\0m\1\353\365\200^\322\250\341\16", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Send Handshake to sensorhub\0", iov_len=28}], 4) = 44
+03-29 19:24:27.250   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 19:24:27.250   357   357 I strace  : write(7, "0", 1)                        = 1
+03-29 19:24:27.250   357   357 I strace  : close(7)                                = 0
+03-29 19:24:27.250   357   357 I strace  : write(6, "\0\0\0\314\306~", 6)          = 6
+03-29 19:24:27.251   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=251180}, NULL) = 0
+03-29 19:24:27.251   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=251354842}) = 0
+03-29 19:24:27.254   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 0, {tv_sec=1, tv_nsec=748645158}Start server
+03-29 19:24:27.254   357   357 I strace  : select event comming = 1 max_fd =5
+03-29 19:24:27.254   357   357 I strace  : Start server
+03-29 19:24:27.254   365   384 D shd     : OnEvent Receive Mcu Control response
+03-29 19:24:27.254   357   357 I strace  : ) = 0
+03-29 19:24:27.255   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:27.255   365   365 D shd     : Handshake OK
+03-29 19:24:27.255   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=255204269}) = 0
+03-29 19:24:27.255   357   357 I strace  : writev(3, [{iov_base="\0m\1\353\365\200^\255\0336\17", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Handshake OK\0", iov_len=13}], 4) = 29
+03-29 19:24:27.255   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:27.255   365   365 D shd     : Set parameter
+03-29 19:24:27.255   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=255881352}) = 0
+03-29 19:24:27.256   357   357 I strace  : writev(3, [{iov_base="\0m\1\353\365\200^\210p@\17", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Set parameter\0", iov_len=14}], 4) = 30
+03-29 19:24:27.256   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 8
+03-29 19:24:27.256   357   357 I strace  : write(8, "0", 1)                        = 1
+03-29 19:24:27.256   357   357 I strace  : close(8)                                = 0
+03-29 19:24:27.256   357   357 I strace  : write(6, "\1\0\20\23\0\0\0\0\0\0\200\t~", 13) = 13
+03-29 19:24:27.257   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=257023}, NULL) = 0
+03-29 19:24:27.257   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=257191404}) = 0
+03-29 19:24:27.259   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 4, {tv_sec=9, tv_nsec=742808596}select event comming = 1 max_fd =4
+03-29 19:24:27.259   357   357 I strace  : select event comming = 1 max_fd =8
+03-29 19:24:27.259   357   357 I strace  : select event comming = 1 max_fd =10
+03-29 19:24:27.263   357   357 I strace  : ) = 0
+03-29 19:24:27.263   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 11
+03-29 19:24:27.263   357   357 I strace  : write(11, "0", 1)                       = 1
+03-29 19:24:27.264   357   357 I strace  : close(11)                               = 0
+03-29 19:24:27.264   357   357 I strace  : write(6, "\1\0\26\23\0\0\0\0\n\361~", 11) = 11
+03-29 19:24:27.264   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=264332}, NULL) = 0
+03-29 19:24:27.264   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=264499477}) = 0
+03-29 19:24:27.270   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 8, {tv_sec=9, tv_nsec=735500523}) = 0
+03-29 19:24:27.270   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 11
+03-29 19:24:27.270   357   357 I strace  : write(11, "0", 1)                       = 1
+03-29 19:24:27.271   357   357 I strace  : close(11)                               = 0
+03-29 19:24:27.271   357   357 I strace  : write(6, "\1\0\27\23\5\0\0\0v\233~", 11) = 11
+03-29 19:24:27.271   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=271409}, NULL) = 0
+03-29 19:24:27.271   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=271575102}) = 0
+03-29 19:24:27.290   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 12, {tv_sec=9, tv_nsec=728424898}) = 0
+03-29 19:24:27.290   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 11
+03-29 19:24:27.290   357   357 I strace  : write(11, "0", 1)                       = 1
+03-29 19:24:27.290   357   357 I strace  : close(11)                               = 0
+03-29 19:24:27.291   357   357 I strace  : write(6, "\1\0\21\23\0\0\0\0\333\355~", 11) = 11
+03-29 19:24:27.291   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=291079}, NULL) = 0
+03-29 19:24:27.291   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=291246925}) = 0
+03-29 19:24:27.296   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 16, {tv_sec=9, tv_nsec=708753075}) = 0
+03-29 19:24:27.296   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:27.297   365   365 D shd     : Set parameter OK, start loop
+03-29 19:24:27.297   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=297000258}) = 0
+03-29 19:24:27.297   357   357 I strace  : writev(3, [{iov_base="\0m\1\353\365\200^B\335\263\21", iov_len=11}, {iov_base="\3", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Set parameter OK, start loop\0", iov_len=29}], 4) = 45
+03-29 19:24:27.297   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 11
+03-29 19:24:27.297   357   357 I strace  : write(11, "0", 1)                       = 1
+03-29 19:24:27.297   357   357 I strace  : close(11)                               = 0
+03-29 19:24:27.298   357   357 I strace  : write(6, "\1\0\20\"\344w~", 7)          = 7
+03-29 19:24:27.298   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=298152}, NULL) = 0
+03-29 19:24:27.298   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=298319998}) = 0
+03-29 19:24:27.307   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 20, {tv_sec=9, tv_nsec=701680002}) = 0
+03-29 19:24:27.307   357   357 I strace  : getuid32()                              = 0
+03-29 19:24:27.307   365   365 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 19:24:27.307   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=307478644}) = 0
+03-29 19:24:27.307   357   357 I strace  : writev(3, [{iov_base="\0m\1\353\365\200^t\300S\22", iov_len=11}, {iov_base="\6", iov_len=1}, {iov_base="shd\0", iov_len=4}, {iov_base="Sensor GetInfo :LSM6DS3,STMicroe"..., iov_len=42}], 4) = 58
+03-29 19:24:27.308   377   377 D SensorHal: use sensorlist_STM.
+03-29 19:24:27.314   357   357 I strace  : sendto(10, "\20\1\0\0\0\0\0\0\1\0\0\0\f\0\0\0LSM6DS3,STMicroe"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =10
+03-29 19:24:27.314   357   357 I strace  : ) = 272
+03-29 19:24:27.403   357   357 I strace  : futex(0xbed8ce60, FUTEX_WAIT_PRIVATE, 4, NULLselect event comming = 1 max_fd =8
+03-29 19:24:27.403   357   357 I strace  : ) = 0
+03-29 19:24:27.404   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=403938}, NULL) = 0
+03-29 19:24:27.404   357   357 I strace  : mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6900000
+03-29 19:24:27.404   357   357 I strace  : prctl(PR_SET_VMA, 0, 0xb6900000, 0x40000, 0xb6f24061) = 0
+03-29 19:24:27.404   357   357 I strace  : write(2, "__bionic_open_tzdata_path: ANDRO"..., 49__bionic_open_tzdata_path: ANDROID_DATA not set!
+03-29 19:24:27.404   357   357 I strace  : ) = 49
+03-29 19:24:27.404   357   357 I strace  : write(2, "__bionic_open_tzdata_path: ANDRO"..., 49__bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:24:27.405   357   357 I strace  : ) = 49
+03-29 19:24:27.405   357   357 I strace  : write(2, "__bionic_open_tzdata_path: ANDRO"..., 49__bionic_open_tzdata_path: ANDROID_DATA not set!
+03-29 19:24:27.405   357   357 I strace  : ) = 49
+03-29 19:24:27.405   357   357 I strace  : write(2, "__bionic_open_tzdata_path: ANDRO"..., 49__bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:24:27.405   357   357 I strace  : ) = 49
+03-29 19:24:27.405   357   357 I strace  : write(2, "__bionic_open_tzdata_path: ANDRO"..., 49__bionic_open_tzdata_path: ANDROID_DATA not set!
+03-29 19:24:27.405   357   357 I strace  : ) = 49
+03-29 19:24:27.405   357   357 I strace  : write(2, "__bionic_open_tzdata_path: ANDRO"..., 49__bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:24:27.406   357   357 I strace  : ) = 49
+03-29 19:24:27.406   357   357 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 10
+03-29 19:24:27.406   357   357 I strace  : write(10, "0", 1)                       = 1
+03-29 19:24:27.406   357   357 I strace  : close(10)                               = 0
+03-29 19:24:27.406   357   357 I strace  : write(6, "\1\0003\0\257|~", 7)          = 7
+03-29 19:24:27.407   357   357 I strace  : gettimeofday({tv_sec=1585509867, tv_usec=406937}, NULL) = 0
+03-29 19:24:27.407   357   357 I strace  : clock_gettime(CLOCK_REALTIME, {tv_sec=1585509867, tv_nsec=407106404}) = 0
+03-29 19:24:27.411   357   357 I strace  : futex(0xbed8ce4c, FUTEX_WAIT_PRIVATE, 24, {tv_sec=1, tv_nsec=592893596}) = 0
+03-29 19:24:27.411   357   357 I strace  : sendto(8, "\20\1\0\0\32\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 19:24:28.888   388   388 D audio_hw_primary: adev_open: enter
+03-29 19:24:28.888   388   388 D platform_info: platform_info_init: Failed to open /system/etc/audio_platform_info.xml, using defaults.
+03-29 19:24:28.957   388   388 D msm8974_platform: platform_init: snd_card_name: msm8226-tapan-snd-card
+03-29 19:24:29.303   399   399 D libEGL  : loaded /vendor/lib/egl/libEGL_adreno.so
+03-29 19:24:29.324   399   399 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_adreno.so
+03-29 19:24:29.481   399   399 D libEGL  : loaded /vendor/lib/egl/libGLESv2_adreno.so
+03-29 19:24:29.536   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.536   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.536   388   388 E audio_route: Control 'HPHL Volume' doesn't exist - skipping
+03-29 19:24:29.536   388   388 E audio_route: Control 'HPHR Volume' doesn't exist - skipping
+03-29 19:24:29.536   388   388 E audio_route: Control 'RX1 Digital Volume' doesn't exist - skipping
+03-29 19:24:29.536   388   388 E audio_route: Control 'RX2 Digital Volume' doesn't exist - skipping
+03-29 19:24:29.536   388   388 E audio_route: Control 'RX3 Digital Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'RX4 Digital Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'ADC1 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'ADC2 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'ADC3 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'ADC4 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'ADC5 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'DEC1 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'DEC2 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'DEC3 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'DEC4 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'IIR1 INP1 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'IIR1 INP2 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'IIR1 INP3 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'IIR1 INP4 Volume' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'COMP0 Switch' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'COMP1 Switch' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'COMP2 Switch' doesn't exist - skipping
+03-29 19:24:29.537   388   388 E audio_route: Control 'SLIMBUS_0_RX Port Mixer INT_BT_SCO_TX' doesn't exist - skipping
+03-29 19:24:29.538   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.538   388   388 E audio_route: Control 'INTERNAL_BT_SCO_RX Audio Mixer Multimedia6' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'MultiMedia5 Mixer QUAT_MI2S_TX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'MultiMedia4 Mixer QUAT_MI2S_TX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'IIR1 INP1 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'SLIM TX5 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'SLIM TX4 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'SLIM TX3 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'SLIM TX2 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'DEC4 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'DEC3 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'DEC2 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX2 MIX2 INP2' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX2 MIX2 INP1' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX1 MIX2 INP2' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX1 MIX2 INP1' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX4 MIX1 INP2' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.539   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'RX2 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'RX1 MIX1 INP3' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'RX1 MIX1 INP2' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'RX1 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'HPHL DAC Switch' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'DAC1 Switch' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'SPK DAC Switch' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'EAR PA Gain' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'SLIM RX2 MUX' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'SPK DRV Volume' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX2' doesn't exist - skipping
+03-29 19:24:29.540   388   388 E audio_route: Control 'CLASS_H_DSM MUX' doesn't exist - skipping
+03-29 19:24:29.541   388   388 E audio_route: Control 'IIR1 Band1' doesn't exist - skipping
+03-29 19:24:29.541   388   388 E audio_route: Control 'IIR1 Band1' doesn't exist - skipping
+03-29 19:24:29.541   388   388 E audio_route: Control 'IIR1 Band1' doesn't exist - skipping
+03-29 19:24:29.541   388   388 E audio_route: Control 'IIR1 Band1' doesn't exist - skipping
+03-29 19:24:29.541   388   388 E audio_route: Control 'IIR1 Band1' doesn't exist - skipping
+03-29 19:24:29.541   388   388 E audio_route: Control 'IIR1 Band2' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band2' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band2' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band2' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band2' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band3' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band3' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band3' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band3' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band3' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band4' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band4' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band4' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band4' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band4' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band5' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band5' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band5' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band5' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Band5' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Enable Band1' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Enable Band2' doesn't exist - skipping
+03-29 19:24:29.542   388   388 E audio_route: Control 'IIR1 Enable Band3' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'IIR1 Enable Band4' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'IIR1 Enable Band5' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'IIR1 INP1 Volume' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'ANC Slot' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'ANC1 FB MUX' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'ANC1 MUX' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'ANC2 MUX' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'ANC Function' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'SLIM_0_RX AANC MUX' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX3' doesn't exist - skipping
+03-29 19:24:29.543   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX4' doesn't exist - skipping
+03-29 19:24:29.584   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.584   388   388 E audio_route: Control 'MultiMedia5 Mixer QUAT_MI2S_TX' doesn't exist - skipping
+03-29 19:24:29.584   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.584   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.585   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.585   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.585   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.585   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.585   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.586   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.586   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.586   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.587   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'Internal BTSCO SampleRate' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'IIR1 INP1 MUX' doesn't exist - skipping
+03-29 19:24:29.588   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'IIR1 INP1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'IIR1 INP1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM RX2 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'RDAC4 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'RDAC5 MUX' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'COMP2 Switch' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.589   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'SLIM RX2 MUX' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RX2 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RDAC5 MUX' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RDAC4 MUX' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RDAC3 MUX' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 Enable Band1' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 Enable Band2' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 Enable Band3' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 Enable Band4' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 Enable Band5' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 INP1 Volume' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RX1 MIX2 INP1' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RX2 MIX2 INP1' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'IIR1 INP1 Volume' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'RX1 MIX2 INP1' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.590   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'RX1 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'CLASS_H_DSM MUX' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'RDAC3 MUX' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'DAC1 Switch' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'ANC Function' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.591   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.603   388   388 E audio_route: Control 'RX1 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.603   388   388 E audio_route: Control 'CLASS_H_DSM MUX' doesn't exist - skipping
+03-29 19:24:29.603   388   388 E audio_route: Control 'RDAC3 MUX' doesn't exist - skipping
+03-29 19:24:29.603   388   388 E audio_route: Control 'DAC1 Switch' doesn't exist - skipping
+03-29 19:24:29.604   388   388 E audio_route: Control 'RX1 Digital Volume' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'ANC Slot' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'ANC1 MUX' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'ADC3 Volume' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'ANC1 FB MUX' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'SLIM RX2 MUX' doesn't exist - skipping
+03-29 19:24:29.605   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.606   388   388 E audio_route: Control 'RX1 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.606   388   388 E audio_route: Control 'RX2 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.606   388   388 E audio_route: Control 'CLASS_H_DSM MUX' doesn't exist - skipping
+03-29 19:24:29.606   388   388 E audio_route: Control 'RDAC3 MUX' doesn't exist - skipping
+03-29 19:24:29.606   388   388 E audio_route: Control 'HPHL DAC Switch' doesn't exist - skipping
+03-29 19:24:29.607   388   388 E audio_route: Control 'COMP1 Switch' doesn't exist - skipping
+03-29 19:24:29.609   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.609   388   388 E audio_route: Control 'RX4 MIX1 INP2' doesn't exist - skipping
+03-29 19:24:29.610   388   388 E audio_route: Control 'SPK DAC Switch' doesn't exist - skipping
+03-29 19:24:29.610   388   388 E audio_route: Control 'COMP0 Switch' doesn't exist - skipping
+03-29 19:24:29.610   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.610   388   388 E audio_route: Control 'SPK DAC Switch' doesn't exist - skipping
+03-29 19:24:29.612   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.612   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.612   388   388 E audio_route: Control 'RDAC4 MUX' doesn't exist - skipping
+03-29 19:24:29.612   388   388 E audio_route: Control 'RDAC5 MUX' doesn't exist - skipping
+03-29 19:24:29.612   388   388 E audio_route: Control 'COMP2 Switch' doesn't exist - skipping
+03-29 19:24:29.613   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.613   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.613   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.613   388   388 E audio_route: Control 'RDAC5 MUX' doesn't exist - skipping
+03-29 19:24:29.613   388   388 E audio_route: Control 'RDAC4 MUX' doesn't exist - skipping
+03-29 19:24:29.615   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.615   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.623   388   388 E audio_route: Control 'ANC Function' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'ANC Slot' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'ANC1 FB MUX' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'ANC1 MUX' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'ANC2 MUX' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'ADC5 Volume' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'ADC4 Volume' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'COMP1 Switch' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'HPHL Volume' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'HPHR Volume' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'RX4 MIX1 INP2' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'SPK DAC Switch' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'COMP0 Switch' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'RDAC5 MUX' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'COMP2 Switch' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.624   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'ANC Slot' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'RX4 MIX1 INP2' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'SPK DAC Switch' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'COMP0 Switch' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'RX3 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'RX4 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'RDAC4 MUX' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'RDAC5 MUX' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'COMP2 Switch' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'LINEOUT1 Volume' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'LINEOUT2 Volume' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX2' doesn't exist - skipping
+03-29 19:24:29.625   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX3' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM_0_RX AANC MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'ADC1 Volume' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM TX2 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'DEC2 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'ADC3 Volume' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM TX3 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'DEC3 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'ADC4 Volume' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'IIR1 INP1 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX2' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM TX2 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'DEC2 MUX' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.626   388   388 E audio_route: Control 'IIR1 INP1 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX1' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX2' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX3' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'AIF1_CAP Mixer SLIM TX4' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM_0_TX Channels' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM TX1 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'DEC1 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM TX2 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'DEC2 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM TX3 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'DEC3 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM TX4 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'DEC4 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM RX1 MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'SLIM_0_RX Channels' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'RX1 MIX1 INP1' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'CLASS_H_DSM MUX' doesn't exist - skipping
+03-29 19:24:29.627   388   388 E audio_route: Control 'RDAC3 MUX' doesn't exist - skipping
+03-29 19:24:29.628   388   388 E audio_route: Control 'HPHL DAC Switch' doesn't exist - skipping
+03-29 19:24:29.628   388   388 E audio_route: Control 'COMP1 Switch' doesn't exist - skipping
+03-29 19:24:29.628   388   388 E audio_route: Control 'EAR PA Gain' doesn't exist - skipping
+03-29 19:24:29.628   388   388 D msm8974_platform: platform_init: Opened sound card:0
+03-29 19:24:29.707   388   388 E ACDB-LOADER: ACDB -> No .acdb files found in /etc!
+03-29 19:24:29.707   388   388 E ACDB-LOADER: ACDB -> Error: Could not open any directory! Failed for /etc
+03-29 19:24:29.707   388   388 E ACDB-LOADER: ACDB -> Could not load .acdb files!
+03-29 19:24:29.755   388   388 E ext_speaker: open_speaker_bundle: DLOPEN failed for /system/lib/soundfx/libspeakerbundle.so
+03-29 19:24:30.020   388   388 D tfa98xx : [NXP] exTfa98xx_calibration ENTER
+03-29 19:24:30.022   388   388 D tfa98xx : Loaded container file calibration Tfa98xx.cnt.
+03-29 19:24:30.110   388   388 D         : tfa98xxCalibrationEx: status: 0x885f, err : 0, line: 499
+03-29 19:24:30.112   388   388 D         : tfa98xxCalibrationEx: status: 0x885f, err : 0, line: 515, re25: 8.00
+03-29 19:24:30.112   388   388 D         : DSP has calibrated before, 8.00 ohm
+03-29 19:24:30.188   388   388 D         : tfa98xxCalibrationEx: re25 = 8.00, line = 596
+03-29 19:24:30.189   388   388 D tfa98xx : handles 0
+03-29 19:24:30.189   388   388 D tfa98xx : [NXP] exTfa98xx status reg is 0xd05f
+03-29 19:24:30.189   388   388 D tfa98xx : status checking ok
+03-29 19:24:30.222   388   388 D         : FUNC: tfaRunMuteAmplifier, LINE: 633 status = 0xc05f
+03-29 19:24:30.222   388   388 D tfa98xx : [NXP] exTfa98xx_calibration END Calibration is done!
+03-29 19:24:30.291   388   388 D audio_hw_primary: out_set_parameters: enter: usecase(0: deep-buffer-playback) kvpairs: routing=2;
+03-29 19:24:30.366   388   432 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+03-29 19:24:30.366   388   432 D msm8974_platform: platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+03-29 19:24:30.366   388   432 E ACDB-LOADER: ACDB -> Not correctly initialized!
+03-29 19:24:30.366   388   432 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-29 19:24:30.366   388   432 D audio_hw_primary: enable_audio_route: apply and update mixer path: deep-buffer-playback
+03-29 19:24:30.798   388   432 D tfa98xx : exTfa98xx_speakeron: mode 0, setmode 0
+03-29 19:24:30.799   388   432 D tfa98xx : Loaded container file speaker_on Tfa98xx.cnt.
+03-29 19:24:30.799   388   432 D tfa98xx : tfa start with volume 0.
+03-29 19:24:30.803   388   432 D tfa98xx : start use case success
+03-29 19:24:31.009   388   432 D tfa98xx : handles 0
+03-29 19:24:31.010   388   432 D tfa98xx : [NXP] exTfa98xx status reg is 0xd05f
+03-29 19:24:31.010   388   432 D tfa98xx : status checking ok
+03-29 19:24:31.010   388   432 D tfa98xx : exTfa98xx start use case successfully
+03-29 19:24:32.864   399   399 I qdutils : PartialUpdate status: Disabled
+03-29 19:24:32.865   399   399 I qdutils : Left Align: 0
+03-29 19:24:32.865   399   399 I qdutils : Width Align: 0
+03-29 19:24:32.865   399   399 I qdutils : Top Align: 0
+03-29 19:24:32.865   399   399 I qdutils : Height Align: 0
+03-29 19:24:32.865   399   399 I qdutils : Min ROI Width: 0
+03-29 19:24:32.865   399   399 I qdutils : Min ROI Height: 0
+03-29 19:24:32.865   399   399 I qdutils : Needs ROI Merge: 0
+03-29 19:24:32.914   399   399 W Adreno-GSL: <gsl_ldd_control:466>: ioctl fd 7 code 0xc0100940 (IOCTL_KGSL_SYNCSOURCE_CREATE) failed: errno 25 Unknown ioctl code
+03-29 19:24:32.926   399   399 I qdhwcomposer: Initializing Qualcomm Hardware Composer
+03-29 19:24:32.926   399   399 I qdhwcomposer: MDP version: 500
+03-29 19:24:32.928   399   399 I qdhwcomposer: hwc_registerProcs
+03-29 19:24:32.928   399   399 I qdhwcomposer: Initializing UEVENT Thread
+03-29 19:24:32.928   399   399 I qdhwcomposer: Initializing VSYNC Thread
+03-29 19:24:32.928   399   399 E cutils-trace: Error opening trace file: Permission denied (13)
+03-29 19:24:32.943   399   437 I qdhwcomposer: vsync_loop: Reading event 0 for dpy 0 from /sys/class/graphics/fb0/vsync_event
+03-29 19:24:32.943   399   437 I qdhwcomposer: vsync_loop: Reading event 1 for dpy 0 from /sys/class/graphics/fb0/show_blank_event
+03-29 19:24:32.943   399   437 I qdhwcomposer: vsync_loop: Reading event 0 for dpy 1 from /sys/class/graphics/fb-1/vsync_event
+03-29 19:24:32.943   399   437 I qdhwcomposer: vsync_loop: Reading event 1 for dpy 1 from /sys/class/graphics/fb-1/show_blank_event
+03-29 19:24:32.965   399   399 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/28/15, cb423fe, Ib3272dc427
+03-29 19:24:33.957   399   448 D qdutils : DEBUG_CALC_FPS: 0
+03-29 19:24:33.957   399   448 D qdutils : period: 10
+03-29 19:24:33.957   399   448 D qdutils : ignorethresh_us: 10
+03-29 19:24:34.010   399   399 E libEGL  : validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+03-29 19:24:35.674   388   432 D audio_hw_primary: disable_audio_route: reset and update mixer path: deep-buffer-playback
+03-29 19:24:35.675   388   432 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-29 19:24:35.920   388   432 D         : FUNC: tfaRunMuteAmplifier, LINE: 633 status = 0xc05f
+03-29 19:24:35.921   388   432 D tfa98xx : device goes to stop success
+03-29 19:24:41.362   465   465 E libEGL  : validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+03-29 19:24:41.851   465   465 D libEGL  : loaded /vendor/lib/egl/libEGL_adreno.so
+03-29 19:24:41.950   465   465 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_adreno.so
+03-29 19:24:43.074   465   465 D libEGL  : loaded /vendor/lib/egl/libGLESv2_adreno.so
+03-29 19:24:43.523   399   437 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+03-29 19:24:43.529   399   437 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+03-29 19:24:43.773   465   465 W Adreno-GSL: <gsl_ldd_control:466>: ioctl fd 8 code 0xc0100940 (IOCTL_KGSL_SYNCSOURCE_CREATE) failed: errno 25 Unknown ioctl code
+03-29 19:24:43.773   465   465 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/28/15, cb423fe, Ib3272dc427
+03-29 19:25:59.591   399   437 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+03-29 19:25:59.638   399   437 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 1
+03-29 19:26:22.121   399   437 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+03-29 19:26:22.128   399   437 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+
+

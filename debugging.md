@@ -207,3 +207,19 @@ Does not fix the issue...
 Currently uknown, but there are some things that might be possible:
 - SELinux is enabled on Android Wear
 - Android Wear does some additional things that sensorfw does not.
+
+## Progress update 30-3-2020
+
+Finally some logging stuff.
+On Android Wear SELinux is disabled by adjusting a custom kernel:
+https://github.com/MagneFire/Huawei-W-1.5-2.0/commit/eda34c87b3e924834b522f1869614cfcae328a4b
+
+The debug information with strace and without strace is copied from the `/system/bin/logcat` command.
+The debug logs are located in: 
+https://github.com/MagneFire/meta-sturgeon-hybris/tree/sensor_restart_issue/logs/
+
+Initial things that can be observed are:
+- MultiHal STM is used, mcu is an STM32 microcontroller?
+- Android Wear seems to activate more sensors.
+- AsteroidOS' sensorfw does not actively use it.
+- /dev/\__properties\__ is loaded, probably not important.

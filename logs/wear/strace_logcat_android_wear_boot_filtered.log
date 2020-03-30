@@ -1,0 +1,1204 @@
+shell@sturgeon:/ $ logcat
+--------- beginning of main
+03-29 20:15:36.869   182   182 W auditd  : type=2000 audit(0.0:1): initialized
+03-29 20:15:39.309   182   182 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+03-29 20:15:40.739     1     1 I init    : type=1400 audit(0.0:3): avc: denied { module_request } for kmod="fs-cpuset" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+03-29 20:15:41.190   184   184 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+--------- beginning of system
+03-29 20:15:41.294   183   183 I vold    : Vold 3.0 (the awakening) firing up
+03-29 20:15:41.295   183   183 V vold    : Detected support for: ext4 f2fs vfat
+03-29 20:15:41.654   207   207 I launch_daemonsu: (post-fs-data) start 
+03-29 20:15:41.809   219   219 I launch_daemonsu: (post-fs-data) /su not mounted yet 
+03-29 20:15:41.835   220   220 I launch_daemonsu: (post-fs-data) copying boot image backups from /cache to /data 
+03-29 20:15:42.185   243   243 I launch_daemonsu: (post-fs-data) loopsetup(/data/su.img):  
+03-29 20:15:43.341   253   253 I launch_daemonsu: (post-fs-data) abort: mount failed 
+03-29 20:15:43.388   255   255 I launch_daemonsu: (post-fs-data) start 
+03-29 20:15:43.531   267   267 I launch_daemonsu: (post-fs-data) /su not mounted yet 
+03-29 20:15:43.558   268   268 I launch_daemonsu: (post-fs-data) copying boot image backups from /cache to /data 
+03-29 20:15:43.903   291   291 I launch_daemonsu: (post-fs-data) loopsetup(/data/su.img):  
+03-29 20:15:45.058   301   301 I launch_daemonsu: (post-fs-data) abort: mount failed 
+03-29 20:15:45.228   304   304 I lowmemorykiller: Using in-kernel low memory killer interface
+03-29 20:15:45.285   310   310 I         : debuggerd: starting
+03-29 20:15:45.315   312   312 I installd: installd firing up
+03-29 20:15:45.369   338   338 I shd     : type=1400 audit(0.0:4): avc: denied { read write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 20:15:45.369   338   338 I shd     : type=1400 audit(0.0:5): avc: denied { read write } for path="socket:[7453]" dev="sockfs" ino=7453 scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 20:15:45.382   319   319 I strace  : execve("/system/bin/shd", ["/system/bin/shd"], [/* 13 vars */]) = 0
+03-29 20:15:45.382   319   319 I strace  : mprotect(0xb6fbb000, 4096, PROT_READ)   = 0
+03-29 20:15:45.382   319   319 I strace  : set_tid_address(0xb6fbdb3c)             = 338
+03-29 20:15:45.383   319   319 I strace  : set_tls(0xb6fbdb7c, 0, 0x28, 0xb6fbe204, 0xb6fbdb34) = 0
+03-29 20:15:45.383   319   319 I strace  : mmap2(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f9a000
+03-29 20:15:45.384   319   319 I strace  : madvise(0xb6f9a000, 12288, MADV_MERGEABLE) = 0
+03-29 20:15:45.384   319   319 I strace  : mprotect(0xb6f9a000, 4096, PROT_NONE)   = 0
+03-29 20:15:45.384   319   319 I strace  : sigaltstack({ss_sp=0xb6f9b000, ss_flags=0, ss_size=8192}, NULL) = 0
+03-29 20:15:45.385   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f9b000, 0x2000, 0xb6fb9672) = 0
+03-29 20:15:45.386   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f99000
+03-29 20:15:45.386   319   319 I strace  : madvise(0xb6f99000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.386   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ)   = 0
+03-29 20:15:45.387   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.387   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ)   = 0
+03-29 20:15:45.388   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.388   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ)   = 0
+03-29 20:15:45.389   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.389   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ)   = 0
+03-29 20:15:45.393   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.393   319   319 I strace  : mprotect(0xb6f99000, 4096, PROT_READ)   = 0
+03-29 20:15:45.394   319   319 I strace  : openat(AT_FDCWD, "/dev/null", O_RDWR|O_LARGEFILE) = 3
+03-29 20:15:45.394   319   319 I strace  : fcntl64(0, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+03-29 20:15:45.394   319   319 I strace  : fcntl64(1, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+03-29 20:15:45.394   319   319 I strace  : fcntl64(2, F_GETFL)                     = 0x20002 (flags O_RDWR|O_LARGEFILE)
+03-29 20:15:45.395   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.395   319   319 I strace  : personality(0xffffffff /* PER_??? */)   = 8388608
+03-29 20:15:45.395   319   319 I strace  : personality(0x800008 /* PER_??? */)     = 8388608
+03-29 20:15:45.396   319   319 I strace  : openat(AT_FDCWD, "/dev/__properties__", O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC) = 3
+03-29 20:15:45.396   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0444, st_size=131072, ...}) = 0
+03-29 20:15:45.396   319   319 I strace  : mmap2(NULL, 131072, PROT_READ, MAP_SHARED, 3, 0) = 0xb6f79000
+03-29 20:15:45.397   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.400   319   319 I strace  : sigaction(SIGABRT, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.401   319   319 I strace  : sigaction(SIGBUS, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.402   319   319 I strace  : sigaction(SIGFPE, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.403   319   319 I strace  : sigaction(SIGILL, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.408   317   317 I clockwork_proxy_native_service_main: ClockworkProxyNativeService is now ready
+03-29 20:15:45.410   336   336 I launch_daemonsu: (service) start 
+03-29 20:15:45.411   319   319 I strace  : sigaction(SIGPIPE, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.412   319   319 I strace  : sigaction(SIGSEGV, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.413   319   319 I strace  : sigaction(SIGSTKFLT, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.414   319   319 I strace  : sigaction(SIGTRAP, {0xb6f9f661, [], SA_RESTORER|SA_RESTART|SA_SIGINFO|SA_ONSTACK, 0xb6faee18}, NULL) = 0
+03-29 20:15:45.415   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f78000
+03-29 20:15:45.415   319   319 I strace  : madvise(0xb6f78000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.416   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f78000, 0x1000, 0xb6fb7815) = 0
+03-29 20:15:45.416   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f77000
+03-29 20:15:45.417   319   319 I strace  : madvise(0xb6f77000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.417   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f77000, 0x1000, 0xb6fb77b0) = 0
+03-29 20:15:45.418   319   319 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f76000
+03-29 20:15:45.419   319   319 I strace  : madvise(0xb6f76000, 12, MADV_MERGEABLE) = 0
+03-29 20:15:45.419   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f76000, 0xc, 0xb6fb778c) = 0
+03-29 20:15:45.420   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f75000
+03-29 20:15:45.431   319   319 I strace  : madvise(0xb6f75000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.431   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f75000, 0x1000, 0xb6fb7815) = 0
+03-29 20:15:45.431   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f74000
+03-29 20:15:45.431   319   319 I strace  : madvise(0xb6f74000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.431   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f74000, 0x1000, 0xb6fb7815) = 0
+03-29 20:15:45.431   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libc.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.431   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libc.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.431   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=678472, ...}) = 0
+03-29 20:15:45.431   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f72000
+03-29 20:15:45.431   319   319 I strace  : madvise(0xb6f72000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.431   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f72000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.431   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f70000
+03-29 20:15:45.431   319   319 I strace  : madvise(0xb6f70000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.431   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f70000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.431   319   319 I strace  : futex(0xb6fbef74, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.431   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.431   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.431   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libc.so", 4096) = 19
+03-29 20:15:45.431   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.431   319   319 I strace  : munmap(0xb6f70000, 8192)                = 0
+03-29 20:15:45.431   319   319 I strace  : munmap(0xb6f72000, 8192)                = 0
+03-29 20:15:45.432   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.434   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.434   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.436   319   319 I strace  : mmap2(NULL, 540672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6eef000
+03-29 20:15:45.436   309   309 I Netd    : Netd 1.0 starting
+03-29 20:15:45.436   319   319 I strace  : madvise(0xb6eef000, 540672, MADV_MERGEABLE) = 0
+03-29 20:15:45.437   319   319 I strace  : mmap2(0xb6eef000, 467824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6eef000
+03-29 20:15:45.438   319   319 I strace  : madvise(0xb6eef000, 467824, MADV_MERGEABLE) = 0
+03-29 20:15:45.438   309   309 D TetherController: Setting IP forward enable = 0
+03-29 20:15:45.439   319   319 I strace  : mmap2(0xb6f62000, 26056, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x72000) = 0xb6f62000
+03-29 20:15:45.440   319   319 I strace  : madvise(0xb6f62000, 26056, MADV_MERGEABLE) = 0
+03-29 20:15:45.443   319   319 I strace  : mmap2(0xb6f69000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6f69000
+03-29 20:15:45.444   319   319 I strace  : madvise(0xb6f69000, 40960, MADV_MERGEABLE) = 0
+03-29 20:15:45.444   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.445   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.446   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libcutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.447   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libcutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.448   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=63196, ...}) = 0
+03-29 20:15:45.449   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.449   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.450   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77a0) = 0
+03-29 20:15:45.452   319   319 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eee000
+03-29 20:15:45.453   319   319 I strace  : madvise(0xb6eee000, 12, MADV_MERGEABLE) = 0
+03-29 20:15:45.454   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6eee000, 0xc, 0xb6fb778c) = 0
+03-29 20:15:45.455   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eec000
+03-29 20:15:45.456   319   319 I strace  : madvise(0xb6eec000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.457   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6eec000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.459   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eea000
+03-29 20:15:45.459   319   319 I strace  : madvise(0xb6eea000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.460   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6eea000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.471   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.472   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.475   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libcutils.so", 4096) = 24
+03-29 20:15:45.476   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.476   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.477   319   319 I strace  : munmap(0xb6eea000, 8192)                = 0
+03-29 20:15:45.477   319   319 I strace  : munmap(0xb6eec000, 8192)                = 0
+03-29 20:15:45.478   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.478   314   314 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+03-29 20:15:45.479   314   314 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 122: Creating device
+03-29 20:15:45.479   314   314 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 123: Device address: 0xb6be4000
+03-29 20:15:45.479   314   314 I keystore: Keymaster0 module is software-only.  Using SoftKeymasterDevice instead.
+03-29 20:15:45.479   314   314 I SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 122: Creating device
+03-29 20:15:45.479   314   314 D SoftKeymaster: system/keymaster/soft_keymaster_device.cpp, Line 123: Device address: 0xb6be4180
+03-29 20:15:45.480   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.480   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.482   319   319 I strace  : mmap2(NULL, 69632, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6edd000
+03-29 20:15:45.482   319   319 I strace  : madvise(0xb6edd000, 69632, MADV_MERGEABLE) = 0
+03-29 20:15:45.484   319   319 I strace  : mmap2(0xb6edd000, 57300, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6edd000
+03-29 20:15:45.485   319   319 I strace  : madvise(0xb6edd000, 57300, MADV_MERGEABLE) = 0
+03-29 20:15:45.486   319   319 I strace  : mmap2(0xb6eec000, 4220, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xe000) = 0xb6eec000
+03-29 20:15:45.486   319   319 I strace  : madvise(0xb6eec000, 4220, MADV_MERGEABLE) = 0
+03-29 20:15:45.487   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.488   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.489   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/liblog.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.490   319   319 I strace  : openat(AT_FDCWD, "/system/lib/liblog.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.491   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=34408, ...}) = 0
+03-29 20:15:45.493   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6edb000
+03-29 20:15:45.493   319   319 I strace  : madvise(0xb6edb000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.494   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6edb000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.495   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ed9000
+03-29 20:15:45.496   319   319 I strace  : madvise(0xb6ed9000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.497   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ed9000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.497   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.498   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.499   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/liblog.so", 4096) = 21
+03-29 20:15:45.501   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.501   319   319 I strace  : munmap(0xb6ed9000, 8192)                = 0
+03-29 20:15:45.502   319   319 I strace  : munmap(0xb6edb000, 8192)                = 0
+03-29 20:15:45.503   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.504   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.504   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.512   319   319 I strace  : mmap2(NULL, 40960, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6ed3000
+03-29 20:15:45.513   319   319 I strace  : madvise(0xb6ed3000, 40960, MADV_MERGEABLE) = 0
+03-29 20:15:45.514   319   319 I strace  : mmap2(0xb6ed3000, 30216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6ed3000
+03-29 20:15:45.515   319   319 I strace  : madvise(0xb6ed3000, 30216, MADV_MERGEABLE) = 0
+03-29 20:15:45.516   319   319 I strace  : mmap2(0xb6edb000, 4168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x7000) = 0xb6edb000
+03-29 20:15:45.517   319   319 I strace  : madvise(0xb6edb000, 4168, MADV_MERGEABLE) = 0
+03-29 20:15:45.518   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.519   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.519   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libm.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.520   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libm.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.521   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=132824, ...}) = 0
+03-29 20:15:45.523   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ed1000
+03-29 20:15:45.523   319   319 I strace  : madvise(0xb6ed1000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.525   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ed1000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.526   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ecf000
+03-29 20:15:45.527   319   319 I strace  : madvise(0xb6ecf000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.528   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ecf000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.529   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.531   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.534   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libm.so", 4096) = 19
+03-29 20:15:45.534   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.535   322   322 I gatekeeperd: Starting gatekeeperd...
+03-29 20:15:45.535   319   319 I strace  : munmap(0xb6ecf000, 8192)                = 0
+03-29 20:15:45.536   319   319 I strace  : munmap(0xb6ed1000, 8192)                = 0
+03-29 20:15:45.536   322   322 W gatekeeperd: falling back to software GateKeeper
+03-29 20:15:45.537   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.538   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.539   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.540   319   319 I strace  : mmap2(NULL, 139264, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6eb1000
+03-29 20:15:45.551   319   319 I strace  : madvise(0xb6eb1000, 139264, MADV_MERGEABLE) = 0
+03-29 20:15:45.553   319   319 I strace  : mmap2(0xb6eb1000, 126892, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6eb1000
+03-29 20:15:45.554   319   319 I strace  : madvise(0xb6eb1000, 126892, MADV_MERGEABLE) = 0
+03-29 20:15:45.556   319   319 I strace  : mmap2(0xb6ed1000, 4256, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x1f000) = 0xb6ed1000
+03-29 20:15:45.556   319   319 I strace  : madvise(0xb6ed1000, 4256, MADV_MERGEABLE) = 0
+03-29 20:15:45.557   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.558   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.559   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libstdc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.560   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libstdc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.561   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=21972, ...}) = 0
+03-29 20:15:45.562   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.563   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.563   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77a0) = 0
+03-29 20:15:45.564   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6eaf000
+03-29 20:15:45.565   319   319 I strace  : madvise(0xb6eaf000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.566   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6eaf000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.567   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ead000
+03-29 20:15:45.568   319   319 I strace  : madvise(0xb6ead000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.568   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ead000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.569   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.570   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.571   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libstdc++.so", 4096) = 24
+03-29 20:15:45.572   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.572   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.573   319   319 I strace  : munmap(0xb6ead000, 8192)                = 0
+03-29 20:15:45.573   319   319 I strace  : munmap(0xb6eaf000, 8192)                = 0
+03-29 20:15:45.574   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.575   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.576   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.577   319   319 I strace  : mmap2(NULL, 28672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6eaa000
+03-29 20:15:45.577   319   319 I strace  : madvise(0xb6eaa000, 28672, MADV_MERGEABLE) = 0
+03-29 20:15:45.578   319   319 I strace  : mmap2(0xb6eaa000, 16653, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6eaa000
+03-29 20:15:45.579   319   319 I strace  : madvise(0xb6eaa000, 16653, MADV_MERGEABLE) = 0
+03-29 20:15:45.580   319   319 I strace  : mmap2(0xb6eaf000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x4000) = 0xb6eaf000
+03-29 20:15:45.581   319   319 I strace  : madvise(0xb6eaf000, 4100, MADV_MERGEABLE) = 0
+03-29 20:15:45.582   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.582   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.583   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.584   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libutils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.585   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=104052, ...}) = 0
+03-29 20:15:45.587   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.587   306   306 I SurfaceFlinger: SurfaceFlinger is starting
+03-29 20:15:45.587   306   306 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+03-29 20:15:45.587   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.588   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77a0) = 0
+03-29 20:15:45.590   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ea8000
+03-29 20:15:45.590   319   319 I strace  : madvise(0xb6ea8000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.591   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ea8000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.593   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6ea6000
+03-29 20:15:45.594   319   319 I strace  : madvise(0xb6ea6000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.595   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ea6000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.595   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.596   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.597   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libutils.so", 4096) = 23
+03-29 20:15:45.597   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.598   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.598   319   319 I strace  : munmap(0xb6ea6000, 8192)                = 0
+03-29 20:15:45.599   319   319 I strace  : munmap(0xb6ea8000, 8192)                = 0
+03-29 20:15:45.600   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.601   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.602   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.603   319   319 I strace  : mmap2(NULL, 110592, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6e8f000
+03-29 20:15:45.603   319   319 I strace  : madvise(0xb6e8f000, 110592, MADV_MERGEABLE) = 0
+03-29 20:15:45.604   319   319 I strace  : mmap2(0xb6e8f000, 95464, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6e8f000
+03-29 20:15:45.605   319   319 I strace  : madvise(0xb6e8f000, 95464, MADV_MERGEABLE) = 0
+03-29 20:15:45.606   319   319 I strace  : mmap2(0xb6ea8000, 4116, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x18000) = 0xb6ea8000
+03-29 20:15:45.607   319   319 I strace  : madvise(0xb6ea8000, 4116, MADV_MERGEABLE) = 0
+03-29 20:15:45.607   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.608   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.609   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.610   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libc++.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.611   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=575088, ...}) = 0
+03-29 20:15:45.612   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e8d000
+03-29 20:15:45.613   319   319 I strace  : madvise(0xb6e8d000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.615   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6e8d000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.616   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6e8b000
+03-29 20:15:45.616   306   306 D libEGL  : loaded /vendor/lib/egl/libEGL_adreno.so
+03-29 20:15:45.617   319   319 I strace  : madvise(0xb6e8b000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.618   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6e8b000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.618   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.619   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.621   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libc++.so", 4096) = 21
+03-29 20:15:45.622   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.622   319   319 I strace  : munmap(0xb6e8b000, 8192)                = 0
+03-29 20:15:45.623   319   319 I strace  : munmap(0xb6e8d000, 8192)                = 0
+03-29 20:15:45.624   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.625   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.626   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.627   319   319 I strace  : mmap2(NULL, 585728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6e00000
+03-29 20:15:45.627   319   319 I strace  : madvise(0xb6e00000, 585728, MADV_MERGEABLE) = 0
+03-29 20:15:45.628   306   306 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_adreno.so
+03-29 20:15:45.629   319   319 I strace  : mmap2(0xb6e00000, 556131, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6e00000
+03-29 20:15:45.629   319   319 I strace  : madvise(0xb6e00000, 556131, MADV_MERGEABLE) = 0
+03-29 20:15:45.633   319   319 I strace  : mmap2(0xb6e89000, 16401, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x88000) = 0xb6e89000
+03-29 20:15:45.634   319   319 I strace  : madvise(0xb6e89000, 16401, MADV_MERGEABLE) = 0
+03-29 20:15:45.635   319   319 I strace  : mmap2(0xb6e8e000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6e8e000
+03-29 20:15:45.635   319   319 I strace  : madvise(0xb6e8e000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.636   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.637   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.638   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libbacktrace.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.638   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libbacktrace.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.639   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=38448, ...}) = 0
+03-29 20:15:45.641   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.641   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.642   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77a0) = 0
+03-29 20:15:45.643   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6dfe000
+03-29 20:15:45.644   319   319 I strace  : madvise(0xb6dfe000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.645   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6dfe000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.646   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6dfc000
+03-29 20:15:45.657   319   319 I strace  : madvise(0xb6dfc000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.657   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6dfc000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.658   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.659   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.659   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libbacktrace.so", 4096) = 27
+03-29 20:15:45.660   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.661   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.662   319   319 I strace  : munmap(0xb6dfc000, 8192)                = 0
+03-29 20:15:45.662   319   319 I strace  : munmap(0xb6dfe000, 8192)                = 0
+03-29 20:15:45.663   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.664   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.665   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.667   319   319 I strace  : mmap2(NULL, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6df5000
+03-29 20:15:45.667   319   319 I strace  : madvise(0xb6df5000, 45056, MADV_MERGEABLE) = 0
+03-29 20:15:45.669   319   319 I strace  : mmap2(0xb6df5000, 33696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6df5000
+03-29 20:15:45.669   319   319 I strace  : madvise(0xb6df5000, 33696, MADV_MERGEABLE) = 0
+03-29 20:15:45.671   319   319 I strace  : mmap2(0xb6dfe000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x8000) = 0xb6dfe000
+03-29 20:15:45.672   319   319 I strace  : madvise(0xb6dfe000, 4100, MADV_MERGEABLE) = 0
+03-29 20:15:45.672   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.673   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.674   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libbase.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.675   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libbase.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.675   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=38504, ...}) = 0
+03-29 20:15:45.676   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6df3000
+03-29 20:15:45.677   319   319 I strace  : madvise(0xb6df3000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.677   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6df3000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.679   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6df1000
+03-29 20:15:45.679   319   319 I strace  : madvise(0xb6df1000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.680   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6df1000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.681   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.681   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.683   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libbase.so", 4096) = 22
+03-29 20:15:45.684   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.684   319   319 I strace  : munmap(0xb6df1000, 8192)                = 0
+03-29 20:15:45.685   319   319 I strace  : munmap(0xb6df3000, 8192)                = 0
+03-29 20:15:45.686   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.687   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.688   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.689   319   319 I strace  : mmap2(NULL, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6dea000
+03-29 20:15:45.690   319   319 I strace  : madvise(0xb6dea000, 45056, MADV_MERGEABLE) = 0
+03-29 20:15:45.692   319   319 I strace  : mmap2(0xb6dea000, 32900, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6dea000
+03-29 20:15:45.692   319   319 I strace  : madvise(0xb6dea000, 32900, MADV_MERGEABLE) = 0
+03-29 20:15:45.702   319   319 I strace  : mmap2(0xb6df3000, 4104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x8000) = 0xb6df3000
+03-29 20:15:45.702   319   319 I strace  : madvise(0xb6df3000, 4104, MADV_MERGEABLE) = 0
+03-29 20:15:45.703   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6de9000
+03-29 20:15:45.704   319   319 I strace  : madvise(0xb6de9000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.705   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6de9000, 0x1000, 0xb6fb7815) = 0
+03-29 20:15:45.705   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.706   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.707   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libunwind.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.708   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libunwind.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.708   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=67116, ...}) = 0
+03-29 20:15:45.709   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.710   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.711   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77a0) = 0
+03-29 20:15:45.712   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6de7000
+03-29 20:15:45.712   319   319 I strace  : madvise(0xb6de7000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.713   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6de7000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.715   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6de5000
+03-29 20:15:45.715   319   319 I strace  : madvise(0xb6de5000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.716   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6de5000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.717   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.717   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.718   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libunwind.so", 4096) = 24
+03-29 20:15:45.719   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.719   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.720   319   319 I strace  : munmap(0xb6de5000, 8192)                = 0
+03-29 20:15:45.721   319   319 I strace  : munmap(0xb6de7000, 8192)                = 0
+03-29 20:15:45.722   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.723   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.723   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.724   319   319 I strace  : mmap2(NULL, 360448, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6d91000
+03-29 20:15:45.725   319   319 I strace  : madvise(0xb6d91000, 360448, MADV_MERGEABLE) = 0
+03-29 20:15:45.726   319   319 I strace  : mmap2(0xb6d91000, 62280, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6d91000
+03-29 20:15:45.726   319   319 I strace  : madvise(0xb6d91000, 62280, MADV_MERGEABLE) = 0
+03-29 20:15:45.727   319   319 I strace  : mmap2(0xb6da1000, 4148, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xf000) = 0xb6da1000
+03-29 20:15:45.728   319   319 I strace  : madvise(0xb6da1000, 4148, MADV_MERGEABLE) = 0
+03-29 20:15:45.729   319   319 I strace  : mmap2(0xb6da3000, 286720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb6da3000
+03-29 20:15:45.729   319   319 I strace  : madvise(0xb6da3000, 286720, MADV_MERGEABLE) = 0
+03-29 20:15:45.730   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.731   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.732   319   319 I strace  : mprotect(0xb6fca000, 4096, PROT_READ)   = 0
+03-29 20:15:45.733   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.734   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.734   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.736   319   319 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d90000
+03-29 20:15:45.736   319   319 I strace  : madvise(0xb6d90000, 12, MADV_MERGEABLE) = 0
+03-29 20:15:45.737   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d90000, 0xc, 0xb6fb778c) = 0
+03-29 20:15:45.739   306   306 D libEGL  : loaded /vendor/lib/egl/libGLESv2_adreno.so
+03-29 20:15:45.751   319   319 I strace  : mprotect(0xb6f62000, 16384, PROT_READ)  = 0
+03-29 20:15:45.751   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.752   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.753   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.753   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.754   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.755   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.756   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.757   367   367 I launch_daemonsu: (service) /su not mounted yet 
+03-29 20:15:45.757   319   319 I strace  : mmap2(NULL, 12, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8e000
+03-29 20:15:45.758   319   319 I strace  : madvise(0xb6d8e000, 12, MADV_MERGEABLE) = 0
+03-29 20:15:45.758   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8e000, 0xc, 0xb6fb778c) = 0
+03-29 20:15:45.759   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.761   319   319 I strace  : mprotect(0xb6eec000, 4096, PROT_READ)   = 0
+03-29 20:15:45.761   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.763   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.764   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.765   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.766   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.766   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.767   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.768   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.769   319   319 I strace  : mprotect(0xb6edb000, 4096, PROT_READ)   = 0
+03-29 20:15:45.769   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.771   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.771   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.772   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.773   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.774   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.775   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.776   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.777   319   319 I strace  : mprotect(0xb6ed1000, 4096, PROT_READ)   = 0
+03-29 20:15:45.778   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.779   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.780   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.780   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.782   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.782   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.783   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.784   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.785   319   319 I strace  : mprotect(0xb6eaf000, 4096, PROT_READ)   = 0
+03-29 20:15:45.786   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.787   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.788   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.789   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.790   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.791   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.792   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.792   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.794   306   306 W Adreno-GSL: <gsl_ldd_control:466>: ioctl fd 10 code 0xc0100940 (IOCTL_KGSL_SYNCSOURCE_CREATE) failed: errno 25 Unknown ioctl code
+03-29 20:15:45.794   306   306 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/28/15, cb423fe, Ib3272dc427
+03-29 20:15:45.796   319   319 I strace  : mprotect(0xb6ea8000, 4096, PROT_READ)   = 0
+03-29 20:15:45.797   368   368 I launch_daemonsu: (service) copying boot image backups from /cache to /data 
+03-29 20:15:45.797   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.798   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.799   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.800   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.801   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.802   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.802   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.803   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.821   319   319 I strace  : mprotect(0xb6e89000, 16384, PROT_READ)  = 0
+03-29 20:15:45.821   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.822   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.822   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.822   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.823   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.823   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.824   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.824   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.826   319   319 I strace  : mprotect(0xb6dfe000, 4096, PROT_READ)   = 0
+03-29 20:15:45.827   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.827   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.828   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.828   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.829   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.829   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.829   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.830   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.831   319   319 I strace  : mprotect(0xb6df3000, 4096, PROT_READ)   = 0
+03-29 20:15:45.832   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.832   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.832   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.833   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.833   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.834   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.834   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.835   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.836   319   319 I strace  : mprotect(0xb6da1000, 4096, PROT_READ)   = 0
+03-29 20:15:45.836   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.837   319   319 I strace  : mprotect(0xb6de9000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.837   319   319 I strace  : mprotect(0xb6f78000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.838   319   319 I strace  : mprotect(0xb6f74000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.839   319   319 I strace  : openat(AT_FDCWD, "/dev/__properties__", O_RDONLY|O_LARGEFILE|O_NOFOLLOW|O_CLOEXEC) = 3
+03-29 20:15:45.840   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0444, st_size=131072, ...}) = 0
+03-29 20:15:45.842   319   319 I strace  : mmap2(NULL, 131072, PROT_READ, MAP_SHARED, 3, 0) = 0xb6d6e000
+03-29 20:15:45.843   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.844   319   319 I strace  : futex(0xb6f68648, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.845   319   319 I strace  : openat(AT_FDCWD, "/vendor/lib/libnetd_client.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.846   319   319 I strace  : openat(AT_FDCWD, "/system/lib/libnetd_client.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.847   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0644, st_size=17916, ...}) = 0
+03-29 20:15:45.848   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d6c000
+03-29 20:15:45.849   319   319 I strace  : madvise(0xb6d6c000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.850   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d6c000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.852   319   319 I strace  : mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d6a000
+03-29 20:15:45.852   319   319 I strace  : madvise(0xb6d6a000, 8192, MADV_MERGEABLE) = 0
+03-29 20:15:45.853   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d6a000, 0x2000, 0xb6fb7701) = 0
+03-29 20:15:45.854   319   319 I strace  : prctl(PR_GET_DUMPABLE)                  = 0
+03-29 20:15:45.854   319   319 I strace  : prctl(PR_SET_DUMPABLE, 1)               = 0
+03-29 20:15:45.855   319   319 I strace  : readlinkat(AT_FDCWD, "/proc/self/fd/3", "/system/lib/libnetd_client.so", 4096) = 29
+03-29 20:15:45.856   319   319 I strace  : prctl(PR_SET_DUMPABLE, 0)               = 0
+03-29 20:15:45.856   319   319 I strace  : munmap(0xb6d6a000, 8192)                = 0
+03-29 20:15:45.857   319   319 I strace  : munmap(0xb6d6c000, 8192)                = 0
+03-29 20:15:45.858   319   319 I strace  : pread64(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\0004\0\0\0"..., 52, 0) = 52
+03-29 20:15:45.859   319   319 I strace  : mmap2(NULL, 4096, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb6f73000
+03-29 20:15:45.859   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.871   319   319 I strace  : mmap2(NULL, 24576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6d68000
+03-29 20:15:45.872   319   319 I strace  : madvise(0xb6d68000, 24576, MADV_MERGEABLE) = 0
+03-29 20:15:45.873   319   319 I strace  : mmap2(0xb6d68000, 12880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xb6d68000
+03-29 20:15:45.874   319   319 I strace  : madvise(0xb6d68000, 12880, MADV_MERGEABLE) = 0
+03-29 20:15:45.875   319   319 I strace  : mmap2(0xb6d6c000, 4100, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x3000) = 0xb6d6c000
+03-29 20:15:45.876   319   319 I strace  : madvise(0xb6d6c000, 4100, MADV_MERGEABLE) = 0
+03-29 20:15:45.876   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.877   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.878   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6f73000
+03-29 20:15:45.879   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.879   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6f73000, 0x1000, 0xb6fb77c0) = 0
+03-29 20:15:45.880   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, 0, 0) = 0xb6d8f000
+03-29 20:15:45.881   319   319 I strace  : madvise(0xb6d8f000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.882   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d8f000, 0x1000, 0xb6fb77d0) = 0
+03-29 20:15:45.882   319   319 I strace  : munmap(0xb6f73000, 4096)                = 0
+03-29 20:15:45.883   319   319 I strace  : mprotect(0xb6d6c000, 4096, PROT_READ)   = 0
+03-29 20:15:45.883   319   319 I strace  : munmap(0xb6d8f000, 4096)                = 0
+03-29 20:15:45.884   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.885   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.885   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.886   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.886   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.887   319   319 I strace  : brk(0)                                  = 0xb8cae000
+03-29 20:15:45.888   319   319 I strace  : mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6d28000
+03-29 20:15:45.889   319   319 I strace  : madvise(0xb6d28000, 262144, MADV_MERGEABLE) = 0
+03-29 20:15:45.890   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6d28000, 0x40000, 0xb6f5a061) = 0
+03-29 20:15:45.890   319   319 I strace  : munmap(0xb6d28000, 262144)              = 0
+03-29 20:15:45.891   319   319 I strace  : mmap2(NULL, 520192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6ce9000
+03-29 20:15:45.892   319   319 I strace  : madvise(0xb6ce9000, 520192, MADV_MERGEABLE) = 0
+03-29 20:15:45.893   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6ce9000, 0x7f000, 0xb6f5a061) = 0
+03-29 20:15:45.893   319   319 I strace  : munmap(0xb6ce9000, 94208)               = 0
+03-29 20:15:45.894   319   319 I strace  : munmap(0xb6d40000, 163840)              = 0
+03-29 20:15:45.895   319   319 I strace  : mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6f73000
+03-29 20:15:45.895   319   319 I strace  : madvise(0xb6f73000, 4096, MADV_MERGEABLE) = 0
+03-29 20:15:45.896   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.897   319   319 I strace  : openat(AT_FDCWD, "/proc/stat", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+03-29 20:15:45.898   319   319 I strace  : fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+03-29 20:15:45.899   319   319 I strace  : mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6cc0000
+03-29 20:15:45.900   319   319 I strace  : madvise(0xb6cc0000, 262144, MADV_MERGEABLE) = 0
+03-29 20:15:45.903   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6cc0000, 0x40000, 0xb6f5a061) = 0
+03-29 20:15:45.904   319   319 I strace  : read(3, "cpu  520 3 607 2812 56 0 5 0 0 0"..., 1024) = 1024
+03-29 20:15:45.905   319   319 I strace  : read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 538
+03-29 20:15:45.906   319   319 I strace  : read(3, "", 1024)                       = 0
+03-29 20:15:45.906   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.907   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.908   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.908   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.921   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.922   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.923   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.923   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.924   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.925   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.925   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.926   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.927   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.928   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.928   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.929   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.929   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.930   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.931   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.931   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.932   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.932   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.933   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.933   319   319 I strace  : futex(0xb6e8ea5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.934   319   319 I strace  : futex(0xb6f69f14, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.935   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.935   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.936   319   319 I strace  : futex(0xb6f69e74, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+03-29 20:15:45.937   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.937   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.938   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.938   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.939   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.940   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.940   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.941   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.942   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.942   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.943   319   319 I strace  : mprotect(0xb6de9000, 4096, PROT_READ)   = 0
+03-29 20:15:45.944   319   319 I strace  : mprotect(0xb6f78000, 4096, PROT_READ)   = 0
+03-29 20:15:45.944   319   319 I strace  : mprotect(0xb6f74000, 4096, PROT_READ)   = 0
+03-29 20:15:45.945   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ|PROT_WRITE) = 0
+03-29 20:15:45.945   319   319 I strace  : mprotect(0xb6f73000, 4096, PROT_READ)   = 0
+03-29 20:15:45.946   319   319 I strace  : ugetrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM_INFINITY}) = 0
+03-29 20:15:45.947   319   319 I strace  : setrlimit(RLIMIT_CORE, {rlim_cur=RLIM_INFINITY, rlim_max=RLIM_INFINITY}) = 0
+03-29 20:15:45.948   319   319 I strace  : openat(AT_FDCWD, "/nvdata/accclibration", O_RDONLY|O_LARGEFILE) = 3
+03-29 20:15:45.949   338   338 I shd     : type=1400 audit(0.0:6): avc: denied { listen } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 20:15:45.951   319   319 I strace  : read(3, "\336\377\17\0\367\377\0\0", 64) = 8
+03-29 20:15:45.951   319   319 I strace  : close(3)                                = 0
+03-29 20:15:45.952   319   319 I strace  : openat(AT_FDCWD, "/dev/pmsg0", O_WRONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+03-29 20:15:45.952   319   319 I strace  : socket(PF_LOCAL, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3
+03-29 20:15:45.953   319   319 I strace  : fcntl64(3, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+03-29 20:15:45.953   319   319 I strace  : connect(3, {sa_family=AF_LOCAL, sun_path="/dev/socket/logdw"}, 110) = 0
+03-29 20:15:45.954   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:45.954   338   338 D shd     : InitParameter read clibration info :-34 15 -9 res:313
+03-29 20:15:45.954   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505745, 954194528}) = 0
+03-29 20:15:45.954   319   319 I strace  : writev(3, [{"\0R\1\321\345\200^`\332\3378", 11}, {"\3", 1}, {"shd\0", 4}, {"InitParameter read clibration in"..., 55}], 4) = 71
+03-29 20:15:45.955   319   319 I strace  : openat(AT_FDCWD, "/nvdata/BARO", O_RDONLY|O_LARGEFILE) = 4
+03-29 20:15:45.956   319   319 I strace  : read(4, "", 64)                         = 0
+03-29 20:15:45.956   319   319 I strace  : close(4)                                = 0
+03-29 20:15:45.957   319   319 I strace  : listen(12, 5)                           = 0
+03-29 20:15:45.958   319   319 I strace  : listen(11, 5)                           = 0
+03-29 20:15:45.972   319   319 I strace  : openat(AT_FDCWD, "/dev/ttyHSL1", O_RDWR|O_NOCTTY|O_LARGEFILE) = 4
+03-29 20:15:45.973   319   319 I strace  : ioctl(4, TCFLSH, 0x2)                   = 0
+03-29 20:15:45.973   319   319 I strace  : ioctl(4, TCGETS, {B9600 opost isig icanon echo ...}) = 0
+03-29 20:15:45.973   319   319 I strace  : ioctl(4, SNDCTL_TMR_START or TCSETS, {B9600 -opost -isig -icanon -echo ...}) = 0
+03-29 20:15:45.974   319   319 I strace  : ioctl(4, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 20:15:45.974   319   319 I strace  : ioctl(4, TCFLSH, 0x2)                   = 0
+03-29 20:15:45.974   319   319 I strace  : write(4, "\1\0\17\0\255c~", 7)          = 7
+03-29 20:15:45.983   319   319 I strace  : pselect6(5, [4], NULL, NULL, {0, 200000000}, 0) = 1 (in [4], left {0, 191618906})
+03-29 20:15:45.984   319   319 I strace  : read(4, "\1\1\17\00011.900.12.01.00\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1500) = 56
+03-29 20:15:45.984   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:45.984   338   338 D update_mcu: get mcu current version:11.900.12.01.00, length:15.
+03-29 20:15:45.985   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505745, 984828538}) = 0
+03-29 20:15:45.985   319   319 I strace  : writev(3, [{"\0R\1\321\345\200^zJ\263:", 11}, {"\3", 1}, {"update_mcu\0", 11}, {"get mcu current version:11.900.1"..., 53}], 4) = 76
+03-29 20:15:45.988   319   319 I strace  : close(4)                                = 0
+03-29 20:15:45.989   319   319 I strace  : openat(AT_FDCWD, "/system/bin/mcu.bin", O_RDONLY|O_LARGEFILE) = 4
+03-29 20:15:45.989   319   319 I strace  : fstat64(4, {st_mode=S_IFREG|0755, st_size=197463, ...}) = 0
+03-29 20:15:46.001   319   319 I strace  : read(4, "\377\252\252\377\340\0\0\0w\2\3\0\3468\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 4096
+03-29 20:15:46.002   319   319 I strace  : close(4)                                = 0
+03-29 20:15:46.002   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:46.002   338   338 E update_mcu: mcu version same(11.900.12.01.00), do not need update!
+03-29 20:15:46.002   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505746, 2491872}) = 0
+03-29 20:15:46.003   319   319 I strace  : writev(3, [{"\0R\1\322\345\200^\340\5&\0", 11}, {"\6", 1}, {"update_mcu\0", 11}, {"mcu version same(11.900.12.01.00"..., 56}], 4) = 79
+03-29 20:15:46.004   319   319 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_boot1", O_WRONLY|O_LARGEFILE) = 4
+03-29 20:15:46.004   319   319 I strace  : write(4, "0", 1)                        = 1
+03-29 20:15:46.005   319   319 I strace  : close(4)                                = 0
+03-29 20:15:46.005   319   319 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_boot0", O_WRONLY|O_LARGEFILE) = 4
+03-29 20:15:46.006   319   319 I strace  : write(4, "0", 1)                        = 1
+03-29 20:15:46.006   319   319 I strace  : close(4)                                = 0
+03-29 20:15:46.007   319   319 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_reset", O_WRONLY|O_LARGEFILE) = 4
+03-29 20:15:46.008   319   319 I strace  : write(4, "0", 1)                        = 1
+03-29 20:15:46.009   319   319 I strace  : close(4)                                = 0
+03-29 20:15:46.022   319   319 I strace  : nanosleep({0, 12000000}, NULL)          = 0
+03-29 20:15:46.022   319   319 I strace  : openat(AT_FDCWD, "/proc/mcu/gpio_mcu_reset", O_WRONLY|O_LARGEFILE) = 4
+03-29 20:15:46.023   319   319 I strace  : write(4, "1", 1)                        = 1
+03-29 20:15:46.023   319   319 I strace  : close(4)                                = 0
+03-29 20:15:46.121   306   306 I qdutils : PartialUpdate status: Disabled
+03-29 20:15:46.121   306   306 I qdutils : Left Align: 0
+03-29 20:15:46.121   306   306 I qdutils : Width Align: 0
+03-29 20:15:46.121   306   306 I qdutils : Top Align: 0
+03-29 20:15:46.121   306   306 I qdutils : Height Align: 0
+03-29 20:15:46.121   306   306 I qdutils : Min ROI Width: 0
+03-29 20:15:46.121   306   306 I qdutils : Min ROI Height: 0
+03-29 20:15:46.122   306   306 I qdutils : Needs ROI Merge: 0
+03-29 20:15:46.126   306   306 I qdhwcomposer: Initializing Qualcomm Hardware Composer
+03-29 20:15:46.126   306   306 I qdhwcomposer: MDP version: 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03-29 20:15:47.454   311   311 E RadioService: couldn't load radio module radio.primary (No such file or directory)
+03-29 20:15:47.533   306   306 D SurfaceFlinger: shader cache generated - 24 shaders in 717.083496 ms
+03-29 20:15:47.546   306   306 D qdutils : DEBUG_CALC_FPS: 0
+03-29 20:15:47.546   306   306 D qdutils : period: 10
+03-29 20:15:47.546   306   306 D qdutils : ignorethresh_us: 500000
+03-29 20:15:47.549   306   306 E qdoverlay: Bad ov dump:  mdp_overlay z=0 fg=0 alpha=255 mask=-1 flags=0x20000 id=-1
+03-29 20:15:47.549   306   306 E qdoverlay: src msmfb_img w=416 h=400 format=13 MDP_RGBA_8888
+03-29 20:15:47.549   306   306 E qdoverlay: src_rect mdp_rect x=0 y=0 w=400 h=400
+03-29 20:15:47.549   306   306 E qdoverlay: dst_rect mdp_rect x=0 y=0 w=400 h=400
+03-29 20:15:47.579   191   191 I auditd  : type=1403 audit(0.0:12): policy loaded auid=4294967295 ses=4294967295
+03-29 20:15:47.719   506   506 I launch_daemonsu: (service) abort: mount failed 
+03-29 20:15:47.996   305   305 I SELinux : SELinux: Loaded service_contexts from /service_contexts.
+03-29 20:15:48.024   319   319 I strace  : nanosleep({2, 0}, 0xbe88c980)           = 0
+03-29 20:15:48.027   319   319 I strace  : openat(AT_FDCWD, "/dev/ttyHSL1", O_RDWR|O_NOCTTY|O_LARGEFILE) = 4
+03-29 20:15:48.027   319   319 I strace  : ioctl(4, TCFLSH, 0x2)                   = 0
+03-29 20:15:48.027   319   319 I strace  : ioctl(4, TCGETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 20:15:48.028   319   319 I strace  : ioctl(4, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 20:15:48.028   319   319 I strace  : ioctl(4, SNDCTL_TMR_START or TCSETS, {B115200 -opost -isig -icanon -echo ...}) = 0
+03-29 20:15:48.028   319   319 I strace  : ioctl(4, TCFLSH, 0x2)                   = 0
+03-29 20:15:48.029   518   518 I shd     : type=1400 audit(0.0:13): avc: denied { getattr } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 20:15:48.029   319   319 I strace  : mmap2(NULL, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xb6bc1000
+03-29 20:15:48.029   319   319 I strace  : madvise(0xb6bc1000, 1044480, MADV_MERGEABLE) = 0
+03-29 20:15:48.030   319   319 I strace  : mprotect(0xb6bc1000, 4096, PROT_NONE)   = 0
+03-29 20:15:48.033   319   319 I strace  : clone(child_stack=0xb6cbf928, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0xb6cbf938, tls=0xb6cbf978, child_tidptr=0xb6cbf938) = 518
+03-29 20:15:48.035   319   319 I strace  : mmap2(NULL, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xb6ac2000
+03-29 20:15:48.035   319   319 I strace  : madvise(0xb6ac2000, 1044480, MADV_MERGEABLE) = 0
+03-29 20:15:48.036   319   319 I strace  : mprotect(0xb6ac2000, 4096, PROT_NONE)   = 0
+03-29 20:15:48.037   319   319 I strace  : clone(child_stack=0xb6bc0928, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0xb6bc0938, tls=0xb6bc0978, child_tidptr=0xb6bc0938) = 519
+03-29 20:15:48.038   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:48.038   338   338 D shd     : Start sensorhub daemon, control server create ok
+03-29 20:15:48.039   518   518 I shd     : type=1400 audit(0.0:14): avc: denied { ioctl } for path="/dev/pts/0" dev="devpts" ino=3 ioctlcmd=5401 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 20:15:48.039   518   518 I shd     : type=1400 audit(0.0:15): avc: denied { write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 20:15:48.039   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 38836246}) = 0
+03-29 20:15:48.048   319   319 I strace  : writev(3, [{"\0R\1\324\345\200^\26\230P\2", 11}, {"\3", 1}, {"shd\0", 4}, {"Start sensorhub daemon, control "..., 49}], 4) = 65
+03-29 20:15:48.049   319   319 I strace  : mmap2(NULL, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xb6981000
+03-29 20:15:48.049   319   319 I strace  : madvise(0xb6981000, 1044480, MADV_MERGEABLE) = 0
+03-29 20:15:48.050   319   319 I strace  : mprotect(0xb6981000, 4096, PROT_NONEStart server
+03-29 20:15:48.051   319   319 I strace  : )   = 0
+03-29 20:15:48.051   319   319 I strace  : Start server
+03-29 20:15:48.051   319   319 I strace  : clone(child_stack=0xb6a7f928, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0xb6a7f938, tls=0xb6a7f978, child_tidptr=0xb6a7f938) = 521
+03-29 20:15:48.051   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:48.052   338   338 D shd     : Send Handshake to sensorhub
+03-29 20:15:48.052   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 52103277}) = 0
+03-29 20:15:48.054   319   319 I strace  : writev(3, [{"\0R\1\324\345\200^m\10\33\3", 11}, {"\3", 1}, {"shd\0", 4}, {"Send Handshake to sensorhub\0", 28}], 4) = 44
+03-29 20:15:48.056   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 5
+03-29 20:15:48.057   319   319 I strace  : write(5, "0", 1)                        = 1
+03-29 20:15:48.058   319   319 I strace  : close(5)                                = 0
+03-29 20:15:48.058   319   319 I strace  : write(4, "\0\0\0\314\306~", 6)          = 6
+03-29 20:15:48.059   319   319 I strace  : gettimeofday({1585505748, 59145}, NULL) = 0
+03-29 20:15:48.060   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 59845621}) = 0
+03-29 20:15:48.063   338   521 D shd     : OnEvent Receive Mcu Control response
+03-29 20:15:48.063   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 0, {1, 940154379}) = 0
+03-29 20:15:48.063   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:48.063   338   338 D shd     : Handshake OK
+03-29 20:15:48.063   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 63569527}) = 0
+03-29 20:15:48.064   319   319 I strace  : writev(3, [{"\0R\1\324\345\200^w\376\311\3", 11}, {"\3", 1}, {"shd\0", 4}, {"Handshake OK\0", 13}], 4) = 29
+03-29 20:15:48.067   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:48.067   338   338 D shd     : Set parameter
+03-29 20:15:48.067   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 67293590}) = 0
+03-29 20:15:48.068   319   319 I strace  : writev(3, [{"\0R\1\324\345\200^\226\321\2\4", 11}, {"\3", 1}, {"shd\0", 4}, {"Set parameter\0", 14}], 4) = 30
+03-29 20:15:48.068   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 5
+03-29 20:15:48.068   319   319 I strace  : write(5, "0", 1)                        = 1
+03-29 20:15:48.069   319   319 I strace  : close(5)                                = 0
+03-29 20:15:48.069   319   319 I strace  : write(4, "\1\0\20\23\336\377\17\0\367\377:\f~", 13) = 13
+03-29 20:15:48.070   319   319 I strace  : gettimeofday({1585505748, 69789}, NULL) = 0
+03-29 20:15:48.070   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 70477496}) = 0
+03-29 20:15:48.081   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 4, {9, 929522504}) = 0
+03-29 20:15:48.082   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 5
+03-29 20:15:48.082   319   319 I strace  : write(5, "0", 1)                        = 1
+03-29 20:15:48.083   319   319 I strace  : close(5)                                = 0
+03-29 20:15:48.083   319   319 I strace  : write(4, "\1\0\26\23\0\0\0\0\n\361~", 11) = 11
+03-29 20:15:48.084   319   319 I strace  : gettimeofday({1585505748, 83909}, NULL) = 0
+03-29 20:15:48.084   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 84400673}) = 0
+03-29 20:15:48.093   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 8, {9, 915599327}) = 0
+03-29 20:15:48.093   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 5
+03-29 20:15:48.094   319   319 I strace  : write(5, "0", 1)                        = 1
+03-29 20:15:48.094   319   319 I strace  : close(5)                                = 0
+03-29 20:15:48.095   319   319 I strace  : write(4, "\1\0\27\23\5\0\0\0v\233~", 11) = 11
+03-29 20:15:48.095   319   319 I strace  : gettimeofday({1585505748, 95183}, NULL) = 0
+03-29 20:15:48.095   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 95535360}) = 0
+03-29 20:15:48.114   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 12, {9, 904464640}) = 0
+03-29 20:15:48.114   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 5
+03-29 20:15:48.115   319   319 I strace  : write(5, "0", 1)                        = 1
+03-29 20:15:48.115   319   319 I strace  : close(5)                                = 0
+03-29 20:15:48.115   319   319 I strace  : write(4, "\1\0\21\23\0\0\0\0\333\355~", 11) = 11
+03-29 20:15:48.116   319   319 I strace  : gettimeofday({1585505748, 116022}, NULL) = 0
+03-29 20:15:48.116   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 116383590}) = 0
+03-29 20:15:48.121   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 16, {9, 883616410}) = 0
+03-29 20:15:48.122   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:48.122   338   338 D shd     : Set parameter OK, start loop
+03-29 20:15:48.122   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505748, 122256767}) = 0
+03-29 20:15:48.123   319   319 I strace  : writev(3, [{"\0R\1\324\345\200^\177}I\7", 11}, {"\3", 1}, {"shd\0", 4}, {"Set parameter OK, start loop\0", 29}], 4) = 45
+03-29 20:15:48.629   191   191 I auditd  : type=1403 audit(0.0:16): policy loaded auid=4294967295 ses=4294967295
+03-29 20:15:48.843   305   305 I SELinux : SELinux: Loaded service_contexts from /service_contexts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03-29 20:15:57.879   718   718 I art     : Starting a blocking GC Explicit
+03-29 20:15:57.927   718   718 I art     : Explicit concurrent mark sweep GC freed 8561(795KB) AllocSpace objects, 3(60KB) LOS objects, 19% free, 7MB/9MB, paused 1.488ms total 48.062ms
+03-29 20:15:57.931   718   718 I SystemServer: User Service
+03-29 20:15:57.952   304   304 I lowmemorykiller: ActivityManager connected
+03-29 20:15:57.955   718   718 D SensorService: nuSensorService starting...
+03-29 20:15:57.959   519   519 I shd     : type=1400 audit(0.0:17): avc: denied { write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 20:15:57.959   519   519 I shd     : type=1400 audit(0.0:18): avc: denied { accept } for path="/dev/socket/shddata" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 20:15:57.959   518   518 I shd     : type=1400 audit(0.0:19): avc: denied { read } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 20:15:57.960   718   718 D SensorHal: Loaded library from /system/lib/libsensorhub.so
+03-29 20:15:57.960   718   718 D SensorHal: sensors_poll_context_t get in !
+03-29 20:15:57.961   718   718 D SensorHal: sensorsocket_init_timeout ok.
+03-29 20:15:57.961   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 0, NULLselect event comming = 1 max_fd =11
+03-29 20:15:57.962   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:57.962   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:57.962   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:57.962   319   319 I strace  : ) = 0
+03-29 20:15:57.963   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 8
+03-29 20:15:57.964   319   319 I strace  : write(8, "0", 1)                        = 1
+03-29 20:15:57.964   319   319 I strace  : close(8)                                = 0
+03-29 20:15:57.964   319   319 I strace  : write(4, "\1\0\20\"\344w~", 7)          = 7
+03-29 20:15:57.965   319   319 I strace  : gettimeofday({1585505757, 965004}, NULL) = 0
+03-29 20:15:57.965   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505757, 965343169}) = 0
+03-29 20:15:57.969   338   338 I shd     : type=1400 audit(0.0:20): avc: denied { write } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 20:15:57.975   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 20, {9, 34656831}) = 0
+03-29 20:15:57.975   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:57.975   338   338 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 20:15:57.975   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505757, 975563742}) = 0
+03-29 20:15:57.976   319   319 I strace  : writev(3, [{"\0R\1\335\345\200^\336\353%:", 11}, {"\6", 1}, {"shd\0", 4}, {"Sensor GetInfo :LSM6DS3,STMicroe"..., 42}], 4) = 58
+03-29 20:15:57.977   319   319 I strace  : sendto(7, "\20\1\0\0\0\0\0\0\1\0\0\0\f\0\0\0LSM6DS3,STMicroe"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:57.977   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:57.977   718   718 D SensorHal: use sensorlist_STM.
+03-29 20:15:57.977   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 4, NULLselect event comming = 1 max_fd =12
+03-29 20:15:57.977   319   319 I strace  : ) = 0
+03-29 20:15:57.977   319   319 I strace  : gettimeofday({1585505757, 977740}, NULL) = 0
+03-29 20:15:57.978   319   319 I strace  : mmap2(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6941000
+03-29 20:15:57.979   319   319 I strace  : madvise(0xb6941000, 262144, MADV_MERGEABLE) = 0
+03-29 20:15:57.979   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6941000, 0x40000, 0xb6f5a061) = 0
+03-29 20:15:57.980   319   319 I strace  : munmap(0xb6941000, 262144)              = 0
+03-29 20:15:57.980   319   319 I strace  : mmap2(NULL, 520192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb6902000
+03-29 20:15:57.980   319   319 I strace  : madvise(0xb6902000, 520192, MADV_MERGEABLE) = 0
+03-29 20:15:57.981   319   319 I strace  : prctl(0x53564d41 /* PR_??? */, 0, 0xb6902000, 0x7f000, 0xb6f5a061) = 0
+03-29 20:15:57.981   319   319 I strace  : munmap(0xb6902000, 253952)              = 0
+03-29 20:15:57.982   319   319 I strace  : munmap(0xb6980000, 4096)                = 0
+03-29 20:15:57.982   319   319 I strace  : openat(AT_FDCWD, "/data//misc/zoneinfo/current/tzdata", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+03-29 20:15:57.983   319   319 I strace  : openat(AT_FDCWD, "/system//usr/share/zoneinfo/tzdata", O_RDONLY|O_LARGEFILE) = 7
+03-29 20:15:57.983   319   319 I strace  : read(7, "tzdata2015g\0\0\0\0\30\0\0v\204\0\7?\323", 24) = 24
+03-29 20:15:57.984   319   319 I strace  : lseek(7, 24, SEEK_SET)                  = 24
+03-29 20:15:57.986   319   319 I strace  : read(7, "Africa/Abidjan\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 30316) = 30316
+03-29 20:15:57.986   319   319 I strace  : lseek(7, 353354, SEEK_SET)              = 353354
+03-29 20:15:57.988   319   319 I strace  : read(7, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0\r\0\0\0\0"..., 29816) = 29816
+03-29 20:15:57.989   319   319 I strace  : close(7)                                = 0
+03-29 20:15:57.990   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:57.990   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:57.991   319   319 I strace  : close(7)                                = 0
+03-29 20:15:57.992   319   319 I strace  : write(4, "\1\0\20\1}]d~", 8)            = 8
+03-29 20:15:57.993   319   319 I strace  : gettimeofday({1585505757, 992757}, NULL) = 0
+03-29 20:15:57.993   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505757, 993480669}) = 0
+03-29 20:15:57.997   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 24, {1, 6519331}) = 0
+03-29 20:15:57.998   319   319 I strace  : sendto(6, "\20\1\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:57.998   319   319 I strace  : futex(select event comming = 1 max_fd =12
+03-29 20:15:57.998   319   319 I strace  : 0xbe88cb30, FUTEX_WAIT_PRIVATE, 8, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:57.999   319   319 I strace  : gettimeofday({1585505757, 998830}, NULL) = 0
+03-29 20:15:57.999   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.000   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.000   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.001   319   319 I strace  : write(4, "\1\0\21\1\245}]~", 8)         = 8
+03-29 20:15:58.002   319   319 I strace  : gettimeofday({1585505758, 1379}, NULL)  = 0
+03-29 20:15:58.002   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 1926815}) = 0
+03-29 20:15:58.006   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 28, {1, 998073185}) = 0
+03-29 20:15:58.007   319   319 I strace  : sendto(6, "\20\1\0\0\5\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:58.007   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:58.007   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 12, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.008   319   319 I strace  : gettimeofday({1585505758, 8117}, NULL)  = 0
+03-29 20:15:58.009   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.009   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.010   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.010   319   319 I strace  : write(4, "\1\0\26\1\2550~", 7)          = 7
+03-29 20:15:58.011   319   319 I strace  : gettimeofday({1585505758, 10923}, NULL) = 0
+03-29 20:15:58.011   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 11378065}) = 0
+03-29 20:15:58.015   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 32, {1, 988621935}) = 0
+03-29 20:15:58.016   319   319 I strace  : sendto(6, "\20\1\0\0\6\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:58.016   319   319 I strace  : futex(select event comming = 1 max_fd =12
+03-29 20:15:58.016   319   319 I strace  : 0xbe88cb30, FUTEX_WAIT_PRIVATE, 16, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.017   319   319 I strace  : gettimeofday({1585505758, 17038}, NULL) = 0
+03-29 20:15:58.018   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.018   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.018   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.019   319   319 I strace  : write(4, "\1\0000\1NG~", 7)             = 7
+03-29 20:15:58.020   319   319 I strace  : gettimeofday({1585505758, 20058}, NULL) = 0
+03-29 20:15:58.021   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 21085409}) = 0
+03-29 20:15:58.024   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 36, {1, 978914591}) = 0
+03-29 20:15:58.025   319   319 I strace  : sendto(6, "\20\1\0\0\23\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:58.025   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:58.026   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 20, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.026   319   319 I strace  : gettimeofday({1585505758, 26537}, NULL) = 0
+03-29 20:15:58.027   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.028   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.029   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.029   319   319 I strace  : write(4, "\1\0002\1\376t~", 7)          = 7
+03-29 20:15:58.030   319   319 I strace  : gettimeofday({1585505758, 30064}, NULL) = 0
+03-29 20:15:58.031   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 30887700}) = 0
+03-29 20:15:58.034   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 40, {1, 969112300}) = 0
+03-29 20:15:58.036   319   319 I strace  : sendto(6, "\20\1\0\0\25\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:58.036   319   319 I strace  : futex(select event comming = 1 max_fd =12
+03-29 20:15:58.036   319   319 I strace  : 0xbe88cb30, FUTEX_WAIT_PRIVATE, 24, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.037   319   319 I strace  : gettimeofday({1585505758, 36833}, NULL) = 0
+03-29 20:15:58.038   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.039   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.039   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.040   319   319 I strace  : write(4, "\1\0003\1&m~", 7)             = 7
+03-29 20:15:58.041   319   319 I strace  : gettimeofday({1585505758, 40716}, NULL) = 0
+03-29 20:15:58.041   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 41588377}) = 0
+03-29 20:15:58.045   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 44, {1, 958411623}) = 0
+03-29 20:15:58.046   319   319 I strace  : sendto(6, "\20\1\0\0\32\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272select event comming = 1 max_fd =12
+03-29 20:15:58.047   319   319 I strace  : gettimeofday({1585505758, 46862}, NULL) = 0
+03-29 20:15:58.048   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.048   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.049   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.050   319   319 I strace  : write(4, "\1\0@\1\212\267~", 7)         = 7
+03-29 20:15:58.050   319   319 I strace  : gettimeofday({1585505758, 50275}, NULL) = 0
+03-29 20:15:58.051   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 51052440}) = 0
+03-29 20:15:58.055   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 48, {1, 948947560}) = 0
+03-29 20:15:58.055   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:58.056   338   338 E shd     : Sensor DeActive :64 failure ret:1
+03-29 20:15:58.056   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 56109002}) = 0
+03-29 20:15:58.058   319   319 I strace  : writev(3, [{"\0R\1\336\345\200^\312'X\3", 11}, {"\6", 1}, {"shd\0", 4}, {"Sensor DeActive :64 failure ret:"..., 34}], 4) = 50
+03-29 20:15:58.059   319   319 I strace  : sendto(6, "\20\1\0\0\33\0\0\0\1\0\0\0\1\0\0\0\1\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272select event comming = 1 max_fd =12
+03-29 20:15:58.060   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 32, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.060   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:58.060   338   338 D shd     : ProcessVirtualSensor type:18 cmd:1
+03-29 20:15:58.061   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 60934940}) = 0
+03-29 20:15:58.063   319   319 I strace  : writev(3, [{"\0R\1\336\345\200^\34\313\241\3", 11}, {"\3", 1}, {"shd\0", 4}, {"ProcessVirtualSensor type:18 cmd"..., 35}], 4) = 51
+03-29 20:15:58.064   319   319 I strace  : sendto(6, "\20\1\0\0\22\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:58.064   319   319 I strace  : futex(select event comming = 1 max_fd =12
+03-29 20:15:58.064   319   319 I strace  : 0xbe88cb30, FUTEX_WAIT_PRIVATE, 36, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.065   319   319 I strace  : gettimeofday({1585505758, 64977}, NULL) = 0
+03-29 20:15:58.066   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.066   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.067   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.068   319   319 I strace  : write(4, "\1\0!\1\7\313~", 7)           = 7
+03-29 20:15:58.069   319   319 I strace  : gettimeofday({1585505758, 68508}, NULL) = 0
+03-29 20:15:58.069   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 69463221}) = 0
+03-29 20:15:58.073   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 52, {1, 930536779}) = 0
+03-29 20:15:58.075   319   319 I strace  : sendto(6, "\20\1\0\0\t\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:15:58.076   319   319 I strace  : futex(select event comming = 1 max_fd =12
+03-29 20:15:58.077   319   319 I strace  : 0xbe88cb30, FUTEX_WAIT_PRIVATE, 40, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:15:58.078   319   319 I strace  : gettimeofday({1585505758, 77342}, NULL) = 0
+03-29 20:15:58.079   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.079   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.080   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.081   319   319 I strace  : write(4, "\1\0 \1\337\322~", 7)         = 7
+03-29 20:15:58.082   319   319 I strace  : gettimeofday({1585505758, 81622}, NULL) = 0
+03-29 20:15:58.082   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 82352544}) = 0
+03-29 20:15:58.086   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 56, {1, 917647456}) = 0
+03-29 20:15:58.088   319   319 I strace  : sendto(6, "\20\1\0\0\n\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:15:58.088   319   319 I strace  : ) = 272
+03-29 20:15:58.089   319   319 I strace  : gettimeofday({1585505758, 89306}, NULL) = 0
+03-29 20:15:58.090   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.091   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.092   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.092   319   319 I strace  : write(4, "\1\0#\1\267\370~", 7)         = 7
+03-29 20:15:58.093   319   319 I strace  : gettimeofday({1585505758, 93058}, NULL) = 0
+03-29 20:15:58.094   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 93802492}) = 0
+03-29 20:15:58.097   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 60, {1, 906197508}) = 0
+03-29 20:15:58.098   319   319 I strace  : sendto(6, "\20\1\0\0\v\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:15:58.099   319   319 I strace  : ) = 272
+03-29 20:15:58.099   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:58.099   338   338 D shd     : ProcessVirtualSensor type:17 cmd:1
+03-29 20:15:58.100   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 99902127}) = 0
+03-29 20:15:58.102   319   319 I strace  : writev(3, [{"\0R\1\336\345\200^\257b\364\5", 11}, {"\3", 1}, {"shd\0", 4}, {"ProcessVirtualSensor type:17 cmd"..., 35}], 4) = 51
+03-29 20:15:58.103   319   319 I strace  : sendto(6, "\20\1\0\0\21\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:15:58.103   319   319 I strace  : ) = 272
+03-29 20:15:58.104   319   319 I strace  : gettimeofday({1585505758, 103782}, NULL) = 0
+03-29 20:15:58.105   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:15:58.105   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:15:58.106   319   319 I strace  : close(7)                                = 0
+03-29 20:15:58.107   319   319 I strace  : write(4, "\1\0#\1\267\370~", 7)         = 7
+03-29 20:15:58.108   319   319 I strace  : gettimeofday({1585505758, 107651}, NULL) = 0
+03-29 20:15:58.109   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 108684159}) = 0
+03-29 20:15:58.112   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 64, {1, 891315841}) = 0
+03-29 20:15:58.113   319   319 I strace  : sendto(6, "\20\1\0\0\17\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:15:58.113   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:58.114   319   319 I strace  : ) = 272
+03-29 20:15:58.115   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 8
+03-29 20:15:58.115   319   319 I strace  : write(8, "0", 1)                        = 1
+03-29 20:15:58.116   319   319 I strace  : close(8)                                = 0
+03-29 20:15:58.117   319   319 I strace  : write(4, "\1\0\20\"\344w~", 7)          = 7
+03-29 20:15:58.117   319   319 I strace  : gettimeofday({1585505758, 117214}, NULL) = 0
+03-29 20:15:58.118   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 117921138}) = 0
+03-29 20:15:58.126   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 68, {9, 882078862}) = 0
+03-29 20:15:58.127   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:58.127   338   338 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 20:15:58.127   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 127435982}) = 0
+03-29 20:15:58.129   319   319 I strace  : writev(3, [{"\0R\1\336\345\200^\316\204\230\7", 11}, {"\6", 1}, {"shd\0", 4}, {"Sensor GetInfo :LSM6DS3,STMicroe"..., 42}], 4) = 58
+03-29 20:15:58.130   718   718 D SensorHal: use sensorlist_STM.
+03-29 20:15:58.131   319   319 I strace  : sendto(7, "\20\1\0\0\0\0\0\0\1\0\0\0\f\0\0\0LSM6DS3,STMicroe"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:15:58.131   319   319 I strace  : ) = 272
+03-29 20:15:58.133   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 60, NULLselect event comming = 1 max_fd =12
+03-29 20:15:58.133   319   319 I strace  : select event comming = 1 max_fd =12
+03-29 20:15:58.133   319   319 I strace  : ) = 0
+03-29 20:15:58.133   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 8
+03-29 20:15:58.134   319   319 I strace  : write(8, "0", 1)                        = 1
+03-29 20:15:58.134   319   319 I strace  : close(8)                                = 0
+03-29 20:15:58.135   319   319 I strace  : write(4, "\1\0\20\"\344w~", 7)          = 7
+03-29 20:15:58.135   319   319 I strace  : gettimeofday({1585505758, 135286}, NULL) = 0
+03-29 20:15:58.135   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 135759992}) = 0
+03-29 20:15:58.144   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 72, {9, 864240008}) = 0
+03-29 20:15:58.145   319   319 I strace  : getuid32()                              = 0
+03-29 20:15:58.145   338   338 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 20:15:58.145   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505758, 145322232}) = 0
+03-29 20:15:58.146   319   319 I strace  : writev(3, [{"\0R\1\336\345\200^\370p\251\10", 11}, {"\6", 1}, {"shd\0", 4}, {"Sensor GetInfo :LSM6DS3,STMicroe"..., 42}], 4) = 58
+03-29 20:15:58.147   718   718 D SensorHal: use sensorlist_STM.
+03-29 20:15:58.147   319   319 I strace  : sendto(7, "\20\1\0\0\0\0\0\0\1\0\0\0\f\0\0\0LSM6DS3,STMicroe"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:15:58.149   319   319 I strace  : ) = 272
+03-29 20:15:58.149   718   772 D SensorService: new thread SensorEventAckReceiver
+03-29 20:15:58.149   718   718 I SystemServiceManager: Starting com.android.server.BatteryService
+03-29 20:15:58.150   718   773 D SensorService: nuSensorService thread starting...
+03-29 20:15:58.221   718   718 I SystemServiceManager: Starting com.android.server.usage.UsageStatsService
+03-29 20:15:58.241   718   718 I SystemServiceManager: Starting com.android.server.webkit.WebViewUpdateService
+03-29 20:15:58.254   718   718 I SystemServer: Reading configuration...
+03-29 20:15:58.254   718   718 I SystemServer: Scheduling Policy
+03-29 20:15:58.255   718   718 I SystemServiceManager: Starting com.android.server.telecom.TelecomLoaderService
+03-29 20:15:58.262   718   718 I SystemServer: Telephony Registry
+03-29 20:15:58.270   718   718 I SystemServer: Entropy Mixer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03-29 20:16:01.941   718   787 D WifiService: New client listening to asynchronous messages
+03-29 20:16:01.993  1042  1042 D HealthDataProvider: onCreate()
+03-29 20:16:02.037   929   929 D PROXY   : Registering NetworkFactory
+03-29 20:16:02.047   718   788 D ConnectivityService: Got NetworkFactory Messenger for PROXY
+03-29 20:16:02.048   929  1063 D PROXY   : got request NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 0
+03-29 20:16:02.071   311   311 D PermissionCache: checking android.permission.CAPTURE_AUDIO_HOTWORD for uid=10004 => granted (895 us)
+03-29 20:16:02.072   929   929 I SoundTriggerWrapper: listModules status=0, # of modules=0
+03-29 20:16:02.073   929   929 I DspHotwordModel: DSP Hotword Model Package not found
+03-29 20:16:02.090   311   795 I str_params: key: 'dsp_recognizer_supported' value: ''
+03-29 20:16:02.096   929   929 W ModelLocator: falling back to en for en_XA
+03-29 20:16:02.096   929   929 W ModelLocator: falling back to es for es_US
+03-29 20:16:02.096   929   929 W ModelLocator: falling back to es for es_419
+03-29 20:16:02.097   929   929 W ModelLocator: falling back to fr for fr_CA
+03-29 20:16:02.097   929   929 W ModelLocator: falling back to nl for nl_NL
+03-29 20:16:02.102   958   958 W DynamiteModule: Local module descriptor class for providerinstaller not found.
+03-29 20:16:02.161  1042  1057 D HealthDatabaseHelper: HealthDatabaseHelper()
+03-29 20:16:02.172   958   958 W ProviderHelper: Unknown dynamite feature providerinstaller
+03-29 20:16:02.184   958   958 I DynamiteModule: Considering local module providerinstaller:0 and remote module providerinstaller:0
+03-29 20:16:02.188   958   958 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+03-29 20:16:02.201   929   939 I art     : Background sticky concurrent mark sweep GC freed 5743(480KB) AllocSpace objects, 9(776KB) LOS objects, 21% free, 6MB/8MB, paused 5.584ms total 41.294ms
+03-29 20:16:02.217   958   958 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+03-29 20:16:02.299   718   732 I ActivityManager: Start proc 1072:com.google.android.wearable.ambient/u0a3 for service com.google.android.wearable.ambient/.AmbientService
+03-29 20:16:02.355  1072  1072 W System  : ClassLoader referenced unknown path: /system/priv-app/ClockworkAmbient/lib/arm
+03-29 20:16:02.402   718   762 E BluetoothManagerService: MESSAGE_TIMEOUT_BIND
+03-29 20:16:02.439   958   958 I art     : Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7ExtendedSSLSession>
+03-29 20:16:02.440   958   958 I art     : Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7ExtendedSSLSession>
+03-29 20:16:02.440   958   958 I art     : Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java8ExtendedSSLSession>
+03-29 20:16:02.440   958   958 I art     : Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java8ExtendedSSLSession>
+03-29 20:16:02.596   958   958 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+03-29 20:16:02.601   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 64, NULLselect event comming = 1 max_fd =12
+03-29 20:16:02.601   319   319 I strace  : ) = 0
+03-29 20:16:02.602   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:16:02.602   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:16:02.602   319   319 I strace  : close(7)                                = 0
+03-29 20:16:02.603   319   319 I strace  : write(4, "\1\0003\3\310\0\0\0\0\0\0\0\0\0\0\0T,~", 19) = 19
+03-29 20:16:02.603   319   319 I strace  : gettimeofday({1585505762, 603240}, NULL) = 0
+03-29 20:16:02.603   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505762, 603586344}) = 0
+03-29 20:16:02.609   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 76, {1, 396413656}) = 0
+03-29 20:16:02.609   319   319 I strace  : sendto(6, "\20\1\0\0\32\0\0\0\1\0\0\0\n\0\0\0\0\0\0\0DS3,STMicroe"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0select event comming = 1 max_fd =12
+03-29 20:16:02.609   319   319 I strace  : ) = 272
+03-29 20:16:02.609   319   319 I strace  : gettimeofday({1585505762, 609827}, NULL) = 0
+03-29 20:16:02.610   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:16:02.610   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:16:02.611   319   319 I strace  : close(7)                                = 0
+03-29 20:16:02.611   319   319 I strace  : write(4, "\1\0003\0\257|~", 7)          = 7
+03-29 20:16:02.611   319   319 I strace  : gettimeofday({1585505762, 611586}, NULL) = 0
+03-29 20:16:02.611   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505762, 611819782}) = 0
+03-29 20:16:02.614   958   958 I Safeboot: Checking safeboot...
+03-29 20:16:02.616   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 80, {1, 388180218}) = 0
+03-29 20:16:02.617   319   319 I strace  : sendto(6, "\20\1\0\0\32\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:16:02.620  1013  1013 I CalendarProvider2: Sending notification intent: Intent { act=android.intent.action.PROVIDER_CHANGED dat=content://com.android.calendar flg=0x20000000 }
+03-29 20:16:02.623  1013  1013 W ContentResolver: Failed to get type for: content://com.android.calendar (Unknown URL content://com.android.calendar)
+03-29 20:16:02.645   718   793 D NotificationSQLiteLog: Pruned event entries: 0
+03-29 20:16:02.649   958   958 I Safeboot Condition: No need to enter Safeboot.
+03-29 20:16:02.655  1072  1072 D WristGestureCtrl: Resuming: GesturesEnabled-true UngazeEnabled-true
+03-29 20:16:02.754  1072  1072 D DefaultUngazeDetector: starting
+03-29 20:16:02.755  1072  1072 D DefaultUngazeDetector: startUngazeStateEstimation(). startTime = 26924
+03-29 20:16:02.762   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 72, NULLselect event comming = 1 max_fd =12
+03-29 20:16:02.762   319   319 I strace  : ) = 0
+03-29 20:16:02.763   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:16:02.763   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:16:02.763   319   319 I strace  : close(7)                                = 0
+03-29 20:16:02.764   319   319 I strace  : write(4, "\1\0\20\3\n\0\0\0\n\0\0\0\0\0\0\0\35\327~", 19) = 19
+03-29 20:16:02.764   319   319 I strace  : gettimeofday({1585505762, 764167}, NULL) = 0
+03-29 20:16:02.764   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505762, 764497126}) = 0
+03-29 20:16:02.769   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 84, {1, 235502874}) = 0
+03-29 20:16:02.770   319   319 I strace  : sendto(6, "\20\1\0\0\0\0\0\0\1\0\0\0\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0croe"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:16:02.770   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 76, NULLselect event comming = 1 max_fd =12
+03-29 20:16:02.770   319   319 I strace  : ) = 0
+03-29 20:16:02.771   319   319 I strace  : gettimeofday({1585505762, 770862}, NULL) = 0
+03-29 20:16:02.771   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:16:02.771   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:16:02.772   319   319 I strace  : close(7)                                = 0
+03-29 20:16:02.772   319   319 I strace  : write(4, "\1\0\20\0\364u~", 7)          = 7
+03-29 20:16:02.772   319   319 I strace  : gettimeofday({1585505762, 772582}, NULL) = 0
+03-29 20:16:02.773   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505762, 773079365}) = 0
+03-29 20:16:02.777   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 88, {1, 226920635}) = 0
+03-29 20:16:02.777   319   319 I strace  : sendto(6, "\20\1\0\0\0\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0croelectroni"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:16:02.780   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 80, NULLselect event comming = 1 max_fd =12
+03-29 20:16:02.780   319   319 I strace  : ) = 0
+03-29 20:16:02.780   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 7
+03-29 20:16:02.780   319   319 I strace  : write(7, "0", 1)                        = 1
+03-29 20:16:02.780   319   319 I strace  : close(7)                                = 0
+03-29 20:16:02.780   319   319 I strace  : write(4, "\1\0\20\4\3203~", 7)          = 7
+03-29 20:16:02.780   319   319 I strace  : gettimeofday({1585505762, 780307}, NULL) = 0
+03-29 20:16:02.780   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505762, 780517542}) = 0
+03-29 20:16:02.785   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 92, {1, 219482458}) = 0
+03-29 20:16:02.785   319   319 I strace  : sendto(5, "\2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0"..., 104, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 104
+03-29 20:16:02.786   319   319 I strace  : sendto(6, "\20\1\0\0\0\0\0\0\1\0\0\0\v\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:16:02.829   958   958 W wsr     : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+03-29 20:16:02.923   929   929 W WatchFaceController: WindowToken from mView is null.
+03-29 20:16:02.931   929   929 W WatchFaceController: WindowToken from mView is null.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03-29 20:16:15.304   718   718 E InputMethodManagerService: Ignoring updateSystemUiLocked due to an invalid token. uid:1000 token:null
+03-29 20:16:15.311   718   765 I DreamManagerService: Entering dreamland.
+03-29 20:16:15.312   718   765 I PowerManagerService: Dozing...
+03-29 20:16:15.312   718   748 I DreamController: Starting dream: name=ComponentInfo{com.google.android.wearable.ambient/com.google.android.wearable.ambient.AmbientDream}, isTest=false, canDoze=true, userId=0
+03-29 20:16:15.313   718   718 E InputMethodManagerService: Ignoring updateSystemUiLocked due to an invalid token. uid:1000 token:null
+03-29 20:16:15.348  1072  1072 V DreamService[AmbientDream]: onBind() intent = Intent { act=android.service.dreams.DreamService flg=0x800000 cmp=com.google.android.wearable.ambient/.AmbientDream }
+03-29 20:16:15.349   518   518 I shd     : type=1400 audit(0.0:22): avc: denied { write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 20:16:15.349   518   518 I shd     : type=1400 audit(0.0:23): avc: denied { read } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 20:16:15.353  1072  1072 I AmbientService: Ambient Created
+03-29 20:16:15.353  1072  1072 V DreamService[AmbientDream]: Calling onDreamingStarted()
+03-29 20:16:15.353  1072  1072 I AmbientService: Ambient Starting
+03-29 20:16:15.354  1072  1072 D WristGestureCtrl: Stopping detectors: GesturesEnabled-true gestureDetector-true ungazeEnabled-true ungaze-true
+03-29 20:16:15.354  1072  1072 D DefaultUngazeDetector: stopping
+03-29 20:16:15.355   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 84, NULLselect event comming = 1 max_fd =12
+03-29 20:16:15.355   319   319 I strace  : ) = 0
+03-29 20:16:15.355   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 8
+03-29 20:16:15.356   319   319 I strace  : write(8, "0", 1)                        = 1
+03-29 20:16:15.356   319   319 I strace  : close(8)                                = 0
+03-29 20:16:15.356   319   319 I strace  : write(4, "\1\0\20\3\n\0\0\0\n\0\0\0\0\0\0\0\35\327~", 19) = 19
+03-29 20:16:15.357   319   319 I strace  : gettimeofday({1585505775, 356882}, NULL) = 0
+03-29 20:16:15.357   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505775, 357173423}) = 0
+03-29 20:16:15.359   718   763 I DisplayManagerService: Display device changed state: "Built-in Screen", DOZE_SUSPEND
+03-29 20:16:15.362   306   306 D SurfaceFlinger: Set power mode=3, type=0 flinger=0xb6ae4000
+03-29 20:16:15.362   306   398 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 2
+03-29 20:16:15.362   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 96, {1, 642826577}) = 0
+03-29 20:16:15.363   718   765 I PowerHAL: power_set_interactive OFF
+03-29 20:16:15.364   319   319 I strace  : sendto(6, "\20\1\0\0\0\0\0\0\1\0\0\0\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272
+03-29 20:16:15.366   718   763 I DisplayManagerService: Display device changed state: "Built-in Screen", DOZE
+03-29 20:16:15.367   306   306 D SurfaceFlinger: Set power mode=1, type=0 flinger=0xb6ae4000
+03-29 20:16:15.367   306   398 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 2
+03-29 20:16:15.367   311   795 D audio_hw_primary: adev_set_parameters: enter: screen_state=on
+03-29 20:16:15.367   319   319 I strace  : futex(0xbe88cb30, FUTEX_WAIT_PRIVATE, 88, NULLselect event comming = 1 max_fd =12
+03-29 20:16:15.367   319   319 I strace  : ) = 0
+03-29 20:16:15.370   319   319 I strace  : gettimeofday({1585505775, 367972}, NULL) = 0
+03-29 20:16:15.370   319   319 I strace  : openat(AT_FDCWD, "/proc/mcusleep/sleep", O_WRONLY|O_LARGEFILE) = 8
+03-29 20:16:15.371   319   319 I strace  : write(8, "0", 1)                        = 1
+03-29 20:16:15.372   319   319 I strace  : close(8)                                = 0
+03-29 20:16:15.373   319   319 I strace  : write(4, "\1\0\20\1}]d~", 8)            = 8
+03-29 20:16:15.374   319   319 I strace  : gettimeofday({1585505775, 373450}, NULL) = 0
+03-29 20:16:15.374   319   319 I strace  : clock_gettime(CLOCK_REALTIME, {1585505775, 374168735}) = 0
+03-29 20:16:15.379   718   788 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 100]
+03-29 20:16:15.379   718   786 E native  : do suspend false
+03-29 20:16:15.380   319   319 I strace  : futex(0xbe88cb1c, FUTEX_WAIT_PRIVATE, 100, {1, 625831265}) = -1 EAGAIN (Resource temporarily unavailable)
+03-29 20:16:15.382   319   319 I strace  : sendto(6, "\20\1\0\0\0\0\0\0\1\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 272, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 272

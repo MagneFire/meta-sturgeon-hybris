@@ -1,0 +1,163 @@
+--------- beginning of main
+03-29 21:49:21.945   182   182 W auditd  : type=2000 audit(0.0:1): initialized
+03-29 21:49:24.299   182   182 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+03-29 21:49:25.729     1     1 I init    : type=1400 audit(0.0:3): avc: denied { module_request } for kmod="fs-cpuset" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+--------- beginning of system
+03-29 21:49:26.302   183   183 I vold    : Vold 3.0 (the awakening) firing up
+03-29 21:49:26.303   183   183 V vold    : Detected support for: ext4 f2fs vfat
+03-29 21:49:26.655   208   208 I launch_daemonsu: (post-fs-data) start 
+03-29 21:49:26.812   220   220 I launch_daemonsu: (post-fs-data) /su not mounted yet 
+03-29 21:49:26.838   221   221 I launch_daemonsu: (post-fs-data) copying boot image backups from /cache to /data 
+03-29 21:49:27.189   244   244 I launch_daemonsu: (post-fs-data) loopsetup(/data/su.img):  
+03-29 21:49:28.346   254   254 I launch_daemonsu: (post-fs-data) abort: mount failed 
+03-29 21:49:28.394   256   256 I launch_daemonsu: (post-fs-data) start 
+03-29 21:49:28.538   268   268 I launch_daemonsu: (post-fs-data) /su not mounted yet 
+03-29 21:49:28.564   269   269 I launch_daemonsu: (post-fs-data) copying boot image backups from /cache to /data 
+03-29 21:49:28.918   292   292 I launch_daemonsu: (post-fs-data) loopsetup(/data/su.img):  
+03-29 21:49:30.073   302   302 I launch_daemonsu: (post-fs-data) abort: mount failed 
+03-29 21:49:30.283   305   305 I lowmemorykiller: Using in-kernel low memory killer interface
+03-29 21:49:30.309   311   311 I         : debuggerd: starting
+03-29 21:49:30.315   313   313 I installd: installd firing up
+03-29 21:49:30.349   333   333 I shd     : type=1400 audit(0.0:4): avc: denied { read write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 21:49:30.349   333   333 I shd     : type=1400 audit(0.0:5): avc: denied { read write } for path="socket:[9410]" dev="sockfs" ino=9410 scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:49:30.420   318   318 I clockwork_proxy_native_service_main: ClockworkProxyNativeService is now ready
+03-29 21:49:30.449   333   333 I shd     : type=1400 audit(0.0:6): avc: denied { listen } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:49:30.459   337   337 I launch_daemonsu: (service) start 
+03-29 21:49:30.461   333   333 D shd     : InitParameter read clibration info :-34 15 -9 res:313
+03-29 21:49:30.466   310   310 I Netd    : Netd 1.0 starting
+03-29 21:49:30.473   310   310 D TetherController: Setting IP forward enable = 0
+03-29 21:49:30.476   333   333 D update_mcu: get mcu current version:11.900.12.01.00, length:15.
+03-29 21:49:30.481   333   333 E update_mcu: mcu version same(11.900.12.01.00), do not need update!
+03-29 21:49:30.506   321   321 I gatekeeperd: Starting gatekeeperd...
+03-29 21:49:30.515   321   321 W gatekeeperd: falling back to software GateKeeper
+03-29 21:49:30.521   315   315 I keystore: Found keymaster0 module Keymaster OpenSSL HAL, version 2
+
+
+
+03-29 21:49:32.431   307   307 E qdoverlay: src msmfb_img w=416 h=400 format=13 MDP_RGBA_8888
+03-29 21:49:32.431   307   307 E qdoverlay: src_rect mdp_rect x=0 y=0 w=400 h=400
+03-29 21:49:32.431   307   307 E qdoverlay: dst_rect mdp_rect x=0 y=0 w=400 h=400
+03-29 21:49:32.489   492   492 I shd     : type=1400 audit(0.0:12): avc: denied { getattr } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 21:49:32.489   492   492 I shd     : type=1400 audit(0.0:13): avc: denied { ioctl } for path="/dev/pts/0" dev="devpts" ino=3 ioctlcmd=5401 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 21:49:32.489   492   492 I shd     : type=1400 audit(0.0:14): avc: denied { write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 21:49:32.497   333   333 D shd     : Start sensorhub daemon, control server create ok
+03-29 21:49:32.497   333   333 D shd     : Send Handshake to sensorhub
+03-29 21:49:32.501   319   319 I shd     : Start server
+03-29 21:49:32.503   319   319 I shd     : Start server
+03-29 21:49:32.503   333   493 D shd     : OnEvent Receive Mcu Control response
+03-29 21:49:32.504   333   333 D shd     : Handshake OK
+03-29 21:49:32.504   333   333 D shd     : Set parameter
+03-29 21:49:32.544   333   333 D shd     : Set parameter OK, start loop
+03-29 21:49:32.669   192   192 I auditd  : type=1403 audit(0.0:15): policy loaded auid=4294967295 ses=4294967295
+03-29 21:49:32.715   504   504 I launch_daemonsu: (service) abort: mount failed 
+
+
+
+
+03-29 21:49:43.041   720   720 I art     : Starting a blocking GC Explicit
+03-29 21:49:43.084   720   720 I art     : Explicit concurrent mark sweep GC freed 819(143KB) AllocSpace objects, 3(60KB) LOS objects, 19% free, 7MB/9MB, paused 933us total 41.868ms
+03-29 21:49:43.087   720   720 I SystemServer: User Service
+03-29 21:49:43.099   492   492 I shd     : type=1400 audit(0.0:17): avc: denied { write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 21:49:43.099   492   492 I shd     : type=1400 audit(0.0:18): avc: denied { accept } for path="/dev/socket/shddata" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:49:43.099   491   491 I shd     : type=1400 audit(0.0:19): avc: denied { read } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:49:43.104   305   305 I lowmemorykiller: ActivityManager connected
+03-29 21:49:43.106   720   720 D SensorService: nuSensorService starting...
+03-29 21:49:43.109   333   333 I shd     : type=1400 audit(0.0:20): avc: denied { write } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:49:43.112   720   720 D SensorHal: Loaded library from /system/lib/libsensorhub.so
+03-29 21:49:43.113   720   720 D SensorHal: sensors_poll_context_t get in !
+03-29 21:49:43.114   720   720 D SensorHal: sensorsocket_init_timeout ok.
+03-29 21:49:43.114   319   319 I shd     : select event comming = 1 max_fd =11
+03-29 21:49:43.114   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.115   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.115   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.125   333   333 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 21:49:43.125   720   720 D SensorHal: use sensorlist_STM.
+03-29 21:49:43.126   319   319 I shd     : select event comming = 2 max_fd =12
+03-29 21:49:43.133   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.139   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.144   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.150   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.156   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.162   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.167   333   333 E shd     : Sensor DeActive :64 failure ret:1
+03-29 21:49:43.167   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.168   333   333 D shd     : ProcessVirtualSensor type:18 cmd:1
+03-29 21:49:43.168   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.174   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.180   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.186   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.186   333   333 D shd     : ProcessVirtualSensor type:17 cmd:1
+03-29 21:49:43.186   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.192   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.192   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.202   333   333 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 21:49:43.203   720   720 D SensorHal: use sensorlist_STM.
+03-29 21:49:43.203   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.205   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.205   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.215   333   333 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 21:49:43.216   720   720 D SensorHal: use sensorlist_STM.
+03-29 21:49:43.216   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:49:43.218   720   720 I SystemServiceManager: Starting com.android.server.BatteryService
+03-29 21:49:43.218   720   769 D SensorService: new thread SensorEventAckReceiver
+03-29 21:49:43.219   720   770 D SensorService: nuSensorService thread starting...
+
+
+
+
+
+
+
+03-29 21:50:00.301   720   761 I PowerManagerService: Dozing...
+03-29 21:50:00.301   720   747 I DreamController: Starting dream: name=ComponentInfo{com.google.android.wearable.ambient/com.google.android.wearable.ambient.AmbientDream}, isTest=false, canDoze=true, userId=0
+03-29 21:50:00.302   720   720 E InputMethodManagerService: Ignoring updateSystemUiLocked due to an invalid token. uid:1000 token:null
+03-29 21:50:00.329   491   491 I shd     : type=1400 audit(0.0:21): avc: denied { write } for path="/dev/pts/0" dev="devpts" ino=3 scontext=u:r:shd:s0 tcontext=u:object_r:devpts:s0 tclass=chr_file permissive=1
+03-29 21:50:00.330  1070  1070 V DreamService[AmbientDream]: onBind() intent = Intent { act=android.service.dreams.DreamService flg=0x800000 cmp=com.google.android.wearable.ambient/.AmbientDream }
+03-29 21:50:00.334  1070  1070 I AmbientService: Ambient Created
+03-29 21:50:00.334  1070  1070 V DreamService[AmbientDream]: Calling onDreamingStarted()
+03-29 21:50:00.334  1070  1070 I AmbientService: Ambient Starting
+03-29 21:50:00.335  1070  1070 D WristGestureCtrl: Stopping detectors: GesturesEnabled-true gestureDetector-true ungazeEnabled-true ungaze-true
+03-29 21:50:00.336  1070  1070 D DefaultUngazeDetector: stopping
+03-29 21:50:00.337   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:00.341   720   759 I DisplayManagerService: Display device changed state: "Built-in Screen", DOZE_SUSPEND
+03-29 21:50:00.348   307   307 D SurfaceFlinger: Set power mode=3, type=0 flinger=0xb6aa4000
+03-29 21:50:00.353   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:00.354   307   393 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 2
+03-29 21:50:00.356   307   307 D SurfaceFlinger: Set power mode=1, type=0 flinger=0xb6aa4000
+03-29 21:50:00.356   307   393 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 2
+03-29 21:50:00.356   720   759 I DisplayManagerService: Display device changed state: "Built-in Screen", DOZE_SUSPEND
+
+
+
+
+
+
+
+
+
+
+03-29 21:50:40.868   720   745 I ActivityManager: Waited long enough for: ServiceRecord{d0f4b38 u0 com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.VolumeUIService}
+03-29 21:50:40.868   720   745 I BroadcastQueue: Resuming delayed broadcast
+03-29 21:50:40.901   720   733 I BroadcastQueue: Delay finish: com.huawei.dailytrack/.service.BootReceiver
+03-29 21:50:40.924  1051  1051 I dailytrack: HealthSensorService::init() strModel=HUAWEI WATCH
+03-29 21:50:40.929   491   491 I shd     : type=1400 audit(0.0:22): avc: denied { accept } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:50:40.929   491   491 I shd     : type=1400 audit(0.0:23): avc: denied { read } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0:c512,c768 tclass=unix_stream_socket permissive=1
+03-29 21:50:40.935  1051  1400 D SportHub: SportHub() System.loadLibrary(libsporthub_jni) start...
+03-29 21:50:40.935  1051  1051 I dailytrack: HealthSensorService::sendInitMeg() the screen is off
+03-29 21:50:40.939   333   333 I shd     : type=1400 audit(0.0:24): avc: denied { write } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0:c512,c768 tclass=unix_stream_socket permissive=1
+03-29 21:50:40.942  1051  1400 D SportHub: SportHub() System.loadLibrary(libsporthub_jni) ok...
+03-29 21:50:40.942  1051  1400 D SportHub: setSystemTime2Mcu() systemTime=1585511440
+03-29 21:50:40.943   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.943   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.949  1051  1400 D SportHub: SportHub()-->disconnect() and release()...
+03-29 21:50:40.950   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.956  1051  1400 D SportHub: setHumanParameter()
+03-29 21:50:40.957   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.957   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.962  1051  1400 D SportHub: SportHub()-->disconnect() and release()...
+03-29 21:50:40.963   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.969   491   491 I shd     : type=1400 audit(0.0:25): avc: denied { read } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:50:40.969   333   333 I shd     : type=1400 audit(0.0:26): avc: denied { write } for path="/dev/socket/shdctl" scontext=u:r:shd:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+03-29 21:50:40.977   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:40.983   319   319 I shd     : select event comming = 1 max_fd =12
+03-29 21:50:41.010   307   307 D SurfaceFlinger: Set power mode=1, type=0 flinger=0xb6aa4000

@@ -1,0 +1,43 @@
+sh-4.4# /system/bin/logcat 
+--------- beginning of main
+__bionic_open_tzdata_path: ANDROID_DATA not set!
+__bionic_open_tzdata_path: ANDROID_ROOT not set!
+__bionic_open_tzdata_path: ANDROID_DATA not set!
+__bionic_open_tzdata_path: ANDROID_ROOT not set!
+__bionic_open_tzdata_path: ANDROID_DATA not set!
+__bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:37:48.861   347   347 W auditd  : type=2000 audit(0.0:1): initialized
+03-29 19:38:02.481   353   353 D shd     : Failed to get shddata from environment: No such file or directory
+03-29 19:38:02.499   353   353 D update_mcu: get mcu current version:11.900.12.01.00, length:15.
+03-29 19:38:02.507   353   353 E update_mcu: mcu version same(11.900.12.01.00), do not need update!
+03-29 19:38:03.983   373   373 D SensorHal: Loaded library from /system/lib/libsensorhub.so
+03-29 19:38:03.983   373   373 D SensorHal: sensors_poll_context_t get in !
+03-29 19:38:03.983   373   373 D SensorHal: sensorsocket_init_timeout ok.
+03-29 19:38:04.640   353   353 D shd     : Start sensorhub daemon, control server create ok
+03-29 19:38:04.640   353   353 D shd     : Send Handshake to sensorhub
+03-29 19:38:04.657   351   351 I shd     : Start server
+03-29 19:38:04.657   351   351 I shd     : select event comming = 1 max_fd =5
+03-29 19:38:04.657   351   351 I shd     : Start server
+03-29 19:38:04.657   351   351 I shd     : select event comming = 1 max_fd =4
+03-29 19:38:04.658   351   351 I shd     : select event comming = 1 max_fd =8
+03-29 19:38:04.658   351   351 I shd     : select event comming = 1 max_fd =10
+03-29 19:38:04.658   353   380 D shd     : OnEvent Receive Mcu Control response
+03-29 19:38:04.658   353   353 D shd     : Handshake OK
+03-29 19:38:04.658   353   353 D shd     : Set parameter
+03-29 19:38:04.696   353   353 D shd     : Set parameter OK, start loop
+03-29 19:38:04.705   353   353 E shd     : Sensor GetInfo :LSM6DS3,STMicroelectronic
+03-29 19:38:04.705   373   373 D SensorHal: use sensorlist_STM.
+03-29 19:38:04.713   351   351 I shd     : select event comming = 1 max_fd =10
+03-29 19:38:04.812   351   351 I shd     : select event comming = 1 max_fd =8
+03-29 19:38:04.812   351   351 I shd     : __bionic_open_tzdata_path: ANDROID_DATA not set!
+03-29 19:38:04.812   351   351 I shd     : __bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:38:04.812   351   351 I shd     : __bionic_open_tzdata_path: ANDROID_DATA not set!
+03-29 19:38:04.812   351   351 I shd     : __bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:38:04.812   351   351 I shd     : __bionic_open_tzdata_path: ANDROID_DATA not set!
+03-29 19:38:04.812   351   351 I shd     : __bionic_open_tzdata_path: ANDROID_ROOT not set!
+03-29 19:38:06.882   384   384 D audio_hw_primary: adev_open: enter
+03-29 19:38:06.956   384   384 D platform_info: platform_info_init: Failed to open /system/etc/audio_platform_info.xml, using defaults.
+03-29 19:38:06.989   384   384 D msm8974_platform: platform_init: snd_card_name: msm8226-tapan-snd-card
+03-29 19:38:07.303   393   393 D libEGL  : loaded /vendor/lib/egl/libEGL_adreno.so
+03-29 19:38:07.307   393   393 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_adreno.so
+03-29 19:38:07.529   393   393 D libEGL  : loaded /vendor/lib/egl/libGLESv2_adreno.so
