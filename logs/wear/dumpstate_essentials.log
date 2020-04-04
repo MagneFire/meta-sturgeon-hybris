@@ -1,0 +1,247 @@
+-------------------------------------------------------------------------------
+DUMP OF SERVICE sensorservice:
+Sensor List:
+LSM6DS3 3-axis Accelerometer| STMicroelectronics| version=1 |android.sensor.accelerometer| 0x00000000 | "" | type=1 | continuous | minRate=0.67Hz | maxRate=100.00Hz | FifoMax=150 events | non-wakeUp | last 50 events = < 1)  -0.1, -0.0,  9.6,37472023683 20:29:42 2)  -0.1,  0.0,  9.6,37482002323 20:29:42 3)  -0.1,  0.0,  9.6,37491980963 20:29:42 4)  -0.1,  0.0,  9.6,37501959603 20:29:42 5)  -0.1,  0.0,  9.6,37511938243 20:29:42 6)  -0.0,  0.1,  9.6,37521916883 20:29:42 7)  -0.0,  0.0,  9.5,37531895523 20:29:42 8)  -0.1,  0.0,  9.6,37541874163 20:29:42 9)  -0.1,  0.0,  9.5,37551852803 20:29:42 10)  -0.1,  0.0,  9.6,37561831443 20:29:42 11)  -0.1, -0.0,  9.6,37571822155 20:29:42 12)  -0.1,  0.0,  9.6,37581812863 20:29:42 13)  -0.1,  0.0,  9.7,37591803571 20:29:42 14)  -0.1,  0.0,  9.6,37601794279 20:29:42 15)  -0.1, -0.0,  9.6,37611784987 20:29:42 16)  -0.1,  0.0,  9.6,37621775695 20:29:42 17)  -0.0,  0.1,  9.6,37631766403 20:29:42 18)  -0.0,  0.1,  9.7,37641757111 20:29:42 19)  -0.1,  0.0,  9.7,37651747819 20:29:42 20)  -0.1,  0.0,  9.6,37661738527 20:29:42 21)  -0.1, -0.1,  9.6,37671704928 20:29:42 22)  -0.1, -0.0,  9.6,37681671329 20:29:42 23)  -0.1, -0.0,  9.6,37691637730 20:29:42 24)  -0.1,  0.0,  9.6,37701604131 20:29:42 25)  -0.1,  0.0,  9.6,37711570532 20:29:42 26)  -0.1,  0.0,  9.6,37721536933 20:29:42 27)  -0.1,  0.0,  9.6,37731503334 20:29:42 28)  -0.1,  0.0,  9.6,37741469735 20:29:42 29)  -0.1,  0.0,  9.6,37751436136 20:29:42 30)  -0.1,  0.0,  9.6,37761402537 20:29:42 31)  -0.0,  0.0,  9.6,37771378188 20:29:42 32)  -0.1,  0.0,  9.6,37781353839 20:29:42 33)  -0.0,  0.0,  9.7,37791329490 20:29:42 34)  -0.0,  0.0,  9.6,37801305141 20:29:42 35)  -0.1,  0.0,  9.6,37811280792 20:29:42 36)  -0.1,  0.0,  9.6,37821256443 20:29:42 37)  -0.1,  0.0,  9.6,37831232094 20:29:42 38)  -0.1,  0.0,  9.6,37841207745 20:29:42 39)  -0.2,  0.1,  9.6,37851183396 20:29:42 40)  -0.1,  0.1,  9.6,37861159047 20:29:42 41)  -0.1,  0.1,  9.6,37872055714 20:29:42 42)  -0.1,  0.1,  9.6,37882055714 20:29:42 43)  -0.1,  0.0,  9.6,37892055714 20:29:42 44)  -0.1,  0.0,  9.6,37902055714 20:29:42 45)  -0.1,  0.0,  9.6,37912055714 20:29:42 46)  -0.1, -0.0,  9.6,37922055714 20:29:42 47)  -0.1, -0.0,  9.6,37932055714 20:29:42 48)  -0.1, -0.0,  9.6,37942055714 20:29:42 49)  -0.1, -0.0,  9.7,37952055714 20:29:42 50)  -0.1,  0.0,  9.7,37962055714 20:29:42 >
+
+LSM6DS3 3-axis Gyroscope| STMicroelectronics| version=1 |android.sensor.gyroscope| 0x00000005 | "" | type=4 | continuous | minRate=0.67Hz | maxRate=100.00Hz | FifoMax=150 events | non-wakeUp | last=<> 
+
+BM1383GLV Pressure Sensor| ROHM Semiconductor| version=1 |android.sensor.pressure| 0x00000006 | "" | type=6 | continuous | minRate=0.40Hz | maxRate=20.00Hz | FifoMax=50 events | non-wakeUp | last=<> 
+
+huawei step counter| Huawei SensorHub| version=1 |android.sensor.step_counter| 0x00000013 | "" | type=19 | on-change | minRate=1.00Hz | minDelay=0us |no batching | non-wakeUp | last=<> 
+
+ADPD153GGRI    | ANALOG DEVICES| version=1 |android.sensor.heart_rate| 0x00000015 | "android.permission.BODY_SENSORS" | type=21 | on-change | minRate=1.00Hz | minDelay=0us |no batching | non-wakeUp | last=<> 
+
+huawei wrist tilt gesture| Huawei SensorHub| version=1 |android.sensor.wrist_tilt_gesture| 0x0000001a | "" | type=26 | special-trigger | maxDelay=0us |minDelay=0us |no batching | wakeUp | last=<> 
+
+huawei motion health| Huawei SensorHub| version=1 |com.huawei.watch.motionhealth| 0x0000001b | "" | type=65538 | on-change | minRate=0.00Hz | maxRate=1.00Hz | no batching | non-wakeUp | last=<> 
+
+huawei step detector| Huawei SensorHub| version=1 |android.sensor.step_detector| 0x00000012 | "" | type=18 | special-trigger | minRate=1.00Hz | minDelay=0us |no batching | non-wakeUp | last=<> 
+
+huawei Gravity Sensor| Huawei SensorHub| version=1 |android.sensor.gravity| 0x00000009 | "" | type=9 | continuous | minRate=1.00Hz | maxRate=50.00Hz | no batching | non-wakeUp | last=<> 
+
+huawei Linear Acceleration Sensor| Huawei SensorHub| version=1 |android.sensor.linear_acceleration| 0x0000000a | "" | type=10 | continuous | minRate=1.00Hz | maxRate=50.00Hz | no batching | non-wakeUp | last=<> 
+
+huawei Rotation Vector Sensor| Huawei SensorHub| version=1 |android.sensor.rotation_vector| 0x0000000b | "" | type=11 | continuous | minRate=1.00Hz | maxRate=50.00Hz | no batching | non-wakeUp | last=<> 
+
+huawei Significant motion Sensor| Huawei SensorHub| version=1 |android.sensor.significant_motion| 0x00000011 | "" | type=17 | one-shot | maxDelay=0us |minDelay=0us |no batching | wakeUp | last=<> 
+
+huawei Game Rotation Vector Sensor| Huawei SensorHub| version=1 |android.sensor.game_rotation_vector| 0x0000000f | "" | type=15 | continuous | minRate=1.00Hz | maxRate=50.00Hz | no batching | non-wakeUp | last=<> 
+
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+halVersion 0x01030001
+13 h/w sensors:
+handle=0x0000001a, active-count=1, batch_period(ms)={ 200.0 }, selected=200.0 ms
+handle=0x0000001a, active-count=1, batch_timeout(ms)={  0.0 }, selected= 0.0 ms
+handle=0x0000001b, active-count=1, batch_period(ms)={ 5000.0 }, selected=5000.0 ms
+handle=0x0000001b, active-count=1, batch_timeout(ms)={ 5000.0 }, selected=5000.0 ms
+Active sensors:
+huawei wrist tilt gesture (handle=0x0000001a, connections=1)
+huawei motion health (handle=0x0000001b, connections=1)
+Socket Buffer size = 984 events
+WakeLock Status: not held 
+Mode : NORMAL
+2 active connections
+Connection Number: 0 
+	Operating Mode: NORMAL
+	 com.huawei.dailytrack.service.HealthSensorService | WakeLockRefCount 0 | uid 10009 | cache size 0 | max cache size 0
+	 huawei motion health 0x0000001b | status: active | pending flush events 0 
+Connection Number: 1 
+	Operating Mode: NORMAL
+	 com.google.android.wearable.ambient.TiltToWakeController | WakeLockRefCount 0 | uid 10003 | cache size 0 | max cache size 0
+	 huawei wrist tilt gesture 0x0000001a | status: active | pending flush events 0 
+Previous Registrations:
+20:30:22 activated package=com.huawei.dailytrack.service.HealthSensorService handle=0x0000001b samplingRate=5000000us maxReportLatency=5000000us
+20:29:42 de-activated package=com.android.clockwork.gestures.detector.DefaultWristGestureDetector handle=0x00000000
+20:29:42 de-activated package=com.android.clockwork.gestures.detector.gaze.SensorDataCollector handle=0x00000000
+20:29:32 activated package=com.android.clockwork.gestures.detector.gaze.SensorDataCollector handle=0x00000000 samplingRate=10000us maxReportLatency=100000us
+20:29:32 activated package=com.android.clockwork.gestures.detector.DefaultWristGestureDetector handle=0x00000000 samplingRate=10000us maxReportLatency=100000us
+20:29:32 activated package=com.google.android.wearable.ambient.TiltToWakeController handle=0x0000001a samplingRate=200000us maxReportLatency=0us
+
+
+
+-------------------------------------------------------------------------------
+DUMP OF SERVICE device_policy:
+Current Device Policy Manager state:
+-------------------------------------------------------------------------------
+DUMP OF SERVICE deviceidle:
+  Settings:
+    inactive_to=+30m0s0ms
+    sensing_to=+4m0s0ms
+    locating_to=+30s0ms
+    location_accuracy=20.0m
+    motion_inactive_to=+10m0s0ms
+    idle_after_inactive_to=+30m0s0ms
+    idle_pending_to=+5m0s0ms
+    max_idle_pending_to=+10m0s0ms
+    idle_pending_factor=2.0
+    idle_to=+60m0s0ms
+    max_idle_to=+6h0m0s0ms
+    idle_factor=2.0
+    min_time_to_alarm=+60m0s0ms
+    max_temp_app_whitelist_duration=+5m0s0ms
+    mms_temp_app_whitelist_duration=+60s0ms
+    sms_temp_app_whitelist_duration=+20s0ms
+  Whitelist (except idle) system apps:
+    com.android.providers.downloads
+    com.android.vending
+    com.google.android.gms
+    com.google.android.wearable.ambient
+  Whitelist system apps:
+    com.google.android.gms
+    com.google.android.wearable.ambient
+  Whitelist (except idle) all app ids:
+    10003
+    10011
+    10013
+    10022
+  Whitelist all app ids:
+    10003
+    10013
+  mEnabled=true
+  mForceIdle=false
+  mMotionSensor={Sensor name="huawei wrist tilt gesture", vendor="Huawei SensorHub", version=1, type=26, maxRange=1.0, resolution=1.0, power=0.23, minDelay=0}
+  mCurDisplay=Display id 0: DisplayInfo{"Built-in Screen", uniqueId "local:0", app 400 x 400, real 400 x 400, largest app 400 x 400, smallest app 400 x 400, mode 1, defaultMode 1, modes [{id=1, width=400, height=400, fps=60.0}], colorTransformId 1, defaultColorTransformId 1, supportedColorTransforms [{id=1, colorTransform=0}], rotation 0, density 280 (282.222 x 282.222) dpi, layerStack 0, appVsyncOff 0, presDeadline 17666667, type BUILT_IN, state DOZE_SUSPEND, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, FLAG_ROUND}, DisplayMetrics{density=1.75, width=400, height=400, scaledDensity=1.75, xdpi=282.222, ydpi=282.222}, isValid=true
+  mScreenOn=false
+  mCharging=true
+  mMotionActive=false
+  mSensing=false mNotMoving=false
+  mLocating=false mHasGps=false mHasNetwork=false mLocated=false
+  mState=ACTIVE
+  mInactiveTimeout=+30m0s0ms
+
+
+-------------------------------------------------------------------------------
+DUMP OF SERVICE window:
+
+-------------------------------------------------------------------------------
+WINDOW MANAGER LAST ANR (dumpsys window lastanr)
+  <no ANR has occurred since boot>
+
+-------------------------------------------------------------------------------
+WINDOW MANAGER POLICY STATE (dumpsys window policy)
+    mSafeMode=false mSystemReady=true mSystemBooted=true
+    mLidState=-1 mLidOpenRotation=-1 mCameraLensCoverState=-1 mHdmiPlugged=false
+    mWakeGestureEnabledSetting=true
+    mSupportAutoRotation=false
+    mUiMode=6 mDockMode=0 mCarDockRotation=-1 mDeskDockRotation=-1
+    mUserRotationMode=1 mUserRotation=0 mAllowAllRotations=-1
+    mCurrentAppOrientation=-1
+    mCarDockEnablesAccelerometer=true mDeskDockEnablesAccelerometer=true
+    mLidKeyboardAccessibility=0 mLidNavigationAccessibility=0 mLidControlsSleep=false
+    mShortPressOnPowerBehavior=4 mLongPressOnPowerBehavior=1
+    mDoublePressOnPowerBehavior=1 mTriplePressOnPowerBehavior=2
+    mHasSoftInput=false
+    mAwake=false
+    mScreenOnEarly=true mScreenOnFully=true
+    mKeyguardDrawComplete=true mWindowManagerDrawComplete=true
+    mOrientationSensorEnabled=false
+    mOverscanScreen=(0,0) 400x400
+    mRestrictedOverscanScreen=(0,0) 400x400
+    mUnrestrictedScreen=(0,0) 400x400
+    mRestrictedScreen=(0,0) 400x400
+    mStableFullscreen=(0,0)-(400,400)
+    mStable=(0,0)-(400,400)
+    mSystem=(0,0)-(400,400)
+    mCur=(0,0)-(400,400)
+    mContent=(0,0)-(400,400)
+    mVoiceContent=(0,0)-(400,400)
+    mDock=(0,0)-(400,400)
+    mDockLayer=268435456 mStatusBarLayer=161000
+    mShowingLockscreen=false mShowingDream=false mDreamingLockscreen=false mDreamingSleepToken=null
+    mStatusBar=Window{845f2c u0 com.google.android.apps.wearable.systemui} isStatusBarKeyguard=true
+    mFocusedWindow=Window{e95eda6 u0 com.huawei.mercury.chargedetection/com.huawei.mercury.chargedetection.MainActivity}
+    mFocusedApp=Token{6f661b8 ActivityRecord{5581c1b u0 com.huawei.mercury.chargedetection/.MainActivity t79}}
+    mTopFullscreenOpaqueWindowState=Window{e95eda6 u0 com.huawei.mercury.chargedetection/com.huawei.mercury.chargedetection.MainActivity}
+    mTopFullscreenOpaqueOrDimmingWindowState=Window{e95eda6 u0 com.huawei.mercury.chargedetection/com.huawei.mercury.chargedetection.MainActivity}
+    mTopIsFullscreen=true mHideLockScreen=false
+    mForceStatusBar=false mForceStatusBarFromKeyguard=false
+    mDismissKeyguard=0 mWinDismissingKeyguard=null mHomePressed=false
+    mAllowLockscreenWhenOn=false mLockScreenTimeout=30000 mLockScreenTimerActive=false
+    mEndcallBehavior=2 mIncallPowerBehavior=1 mLongPressOnHomeBehavior=0
+    mLandscapeRotation=1 mSeascapeRotation=3
+    mPortraitRotation=0 mUpsideDownRotation=2
+    mDemoHdmiRotation=1 mDemoHdmiRotationLock=false
+    mUndockedHdmiRotation=-1
+    mKeyMapping={
+      KEYCODE_SETTINGS=com.google.android.apps.wearable.settings/com.google.android.clockwork.settings.GlobalKeyReceiver
+    }
+    BarController.StatusBar
+      mState=WINDOW_STATE_SHOWING
+      mTransientBar=TRANSIENT_BAR_NONE
+    PolicyControl.sImmersiveStatusFilter=null
+    PolicyControl.sImmersiveNavigationFilter=null
+    PolicyControl.sImmersivePreconfirmationsFilter=null
+    WakeGestureListener
+      mTriggerRequested=false
+      mSensor=null
+    WindowOrientationListener
+      mEnabled=false
+      mCurrentRotation=0
+      mSensorType=@0
+      mSensor={Sensor name="LSM6DS3 3-axis Accelerometer", vendor="STMicroelectronics", version=1, type=1, maxRange=39.2266, resolution=0.009576807, power=0.23, minDelay=10000}
+      mRate=2
+      AccelSensorJudge
+        mProposedRotation=0
+        mPredictedRotation=0
+        mLastFilteredX=0.0
+        mLastFilteredY=0.0
+        mLastFilteredZ=0.0
+        mLastFilteredTimestampNanos=0 (102154.4ms ago)
+        mTiltHistory={last: 0.0}
+        mFlat=false
+        mSwinging=false
+        mAccelerating=false
+        mOverhead=false
+        mTouched=false
+        mTiltToleranceConfig=[[-25, 70], [-25, 65], [-25, 60], [-25, 65]]
+    BurnInProtection
+      mBurnInProtectionActive=true
+      mHorizontalBurnInOffsetsBounds=(-10, 10)
+      mVerticalBurnInOffsetsBounds=(-10, 4)
+      mBurnInRadiusMaxSquared=64
+      mLastBurnInOffset=(0, 0)
+      mOfsetChangeDirections=(1, 1)
+    KeyguardServiceDelegate
+      showing=false
+      showingAndNotOccluded=true
+      inputRestricted=false
+      occluded=false
+      secure=false
+      dreaming=true
+      systemIsReady=true
+      deviceHasKeyguard=true
+      enabled=false
+      offReason=3
+      currentUser=0
+      bootCompleted=true
+      screenState=2
+      interactiveState=0
+      KeyguardStateMonitor
+        mIsShowing=false
+        mSimSecure=false
+        mInputRestricted=false
+        mCurrentUserId=0
+
+
+
+
+SERVICE com.google.android.wearable.ambient/.AmbientService 7d4c458 pid=1089
+  Client:
+    Dream: com.google.android.wearable.ambient.AmbientDream$Callbacks@ffa4870
+      Alive: true
+    Activities:
+      ComponentInfo{com.google.android.wearable.app/com.google.android.clockwork.home.HomeActivity}
+        Callbacks: @64327e9
+        Running: false
+        Ambient: false
+      ComponentInfo{com.huawei.mercury.chargedetection/com.huawei.mercury.chargedetection.MainActivity}
+        Callbacks: @7f72c6e
+        Running: true
+        Ambient: true
+    Next Alarm: 55137
+    Tilt:
+      Enabled: true
+      Registered: true
+      Last Reg Event: 1585852172737
+      Theater Mode: false
+      Last Tilt: -1

@@ -223,3 +223,34 @@ Initial things that can be observed are:
 - Android Wear seems to activate more sensors.
 - AsteroidOS' sensorfw does not actively use it.
 - /dev/\__properties\__ is loaded, probably not important.
+
+## Progress update 04-04-2020
+
+One thing that became clear is that SELinux was not the thing that is responsible for the sensors to work properly.
+SELinux only blocked the socket connections to `shd` when the daemon was run through `strace`.
+
+The things that become clear is that multiple programs are responsible for setting up the Wrist Gesture sensor.
+There is Androids SensorService and Android Wear ClockworkAmbient. The former has publicly available source code, but the latter does not...
+
+The important thing that SensorService does is disabling all sensors. This can be achieved by upgrading sensorfw to a later version, in this case 0.11.8.
+
+After disassemply ClockworkAmbient. It became clear the the class TiltToWakeController also set a delay when getting the default wrist sensor. Below is the important part of the code.
+```java
+.prologue
+const/16 v3, 0x1a
+
+const/4 v4, 0x3
+
+.line 99
+iget-object v1, p0, Lcom/google/android/wearable/ambient/TiltToWakeController;->mSensorManager:Landroid/hardware/SensorManager;
+
+```
+The sensor handle for the wrist sensor gesture is 26(0x1a). Notice also that `v4` is set to 3. After some more digging, this means that it sets the delay to `SENSOR_DELAY_NORMAL`:
+https://developer.android.com/reference/android/hardware/SensorManager#SENSOR_DELAY_NORMAL
+From looking at the code in `frameworks/base/core/java/android/hardware/SensorManager.java` we can see that it sets a delay of 200ms.
+
+Turns out that sensorfw sets the delay for the wrist gesture sensor to the minimal delay reported by the Android backend.
+
+Setting the delay explicitly to 200ms in sensorfw fixed the issue.
+
+The heart rate monitor suffers from the same issue. Setting the delay for the heart rate monitor to 200ms seemed to have solved the issue here as well.
