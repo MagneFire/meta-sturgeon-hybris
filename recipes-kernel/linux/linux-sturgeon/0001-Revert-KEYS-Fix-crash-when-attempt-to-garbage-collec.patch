@@ -1,0 +1,31 @@
+From bb162d4fc29f7dda0180d733607105c33f795b1f Mon Sep 17 00:00:00 2001
+From: MagneFire <IDaNLContact@gmail.com>
+Date: Sun, 8 Nov 2020 16:33:12 +0100
+Subject: [PATCH] Revert "KEYS: Fix crash when attempt to garbage collect an
+ uninstantiated keyring"
+
+This reverts commit 9ee0d87efb73a0f2a702f996dc3a76f561cc46ae.
+---
+ security/keys/gc.c | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/security/keys/gc.c b/security/keys/gc.c
+index 16a0d0696d9..797818695c8 100644
+--- a/security/keys/gc.c
++++ b/security/keys/gc.c
+@@ -187,12 +187,6 @@ static noinline void key_gc_unused_keys(struct list_head *keys)
+ 		kdebug("- %u", key->serial);
+ 		key_check(key);
+ 
+-		/* Throw away the key data if the key is instantiated */
+-		if (test_bit(KEY_FLAG_INSTANTIATED, &key->flags) &&
+-			!test_bit(KEY_FLAG_NEGATIVE, &key->flags) &&
+-			key->type->destroy)
+-				key->type->destroy(key);
+-
+ 		security_key_free(key);
+ 
+ 		/* deal with the user's key tracking and quota */
+-- 
+2.29.2
+
